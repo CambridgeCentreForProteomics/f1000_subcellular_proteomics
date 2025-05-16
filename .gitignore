@@ -1,0 +1,8 @@
+*.rda
+W00_workflow_draft_files/*
+W00_workflow_draft_cache/*
+sandbox
+.Rhistory
+.DS_Store
+*.txt
+diann_report.tsv

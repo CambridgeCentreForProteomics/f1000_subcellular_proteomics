@@ -40,7 +40,7 @@ abstract: |
   
   **Conclusions:** A comprehensive start-to-end workflow for correlation profiling
   subcellular proteomics experiments is presented.
-   
+
 keywords: | 
   Subcellular spatial proteomics, correlation profiling, mass spectrometry, protein localisation, 
   LOPIT, QFeatures, pRoloc, bandle 
@@ -447,7 +447,9 @@ multiple experimental sets. For example, users can split their data by
 replicate, condition or sample during the import such that these data can be
 processed and analysed separately. The most appropriate method for data import
 into a `QFeatures` object will depend on the experimental design and data
-structure.
+structure. For users with DDA data (in a wide format), the three main scenarios
+are outlined below. Users with DIA data (in a long format) are referred to the Appendix
+for details on data import into `QFeatures`.
 
 (A) *Users with a single sample (LFQ or TMT): No need to split data*
 \
@@ -465,7 +467,7 @@ into a `data.frame`, 2) identify the columns containing quantitative data
 to the `quantCols` argument. Provide a name to the experimental set using the
 `name` argument. The `colData` can be added during import or annotated after import. 
 
-(B) *Users with multiple samples analysed by LFQ: Split data by columns:*
+(B) *Users with multiple samples analysed by LFQ: Split data by columns*
 \
 Users with multiple correlation profiling samples (i.e., multiple replicates or
 conditions) analysed by LFQ will likely have the results of an identification 

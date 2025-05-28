@@ -5,13 +5,13 @@ author:
     affiliation: Cambridge Centre for Proteomics, Department of Biochemistry, University of Cambridge, Cambridge, CB2 1QR, UK
   - name: Thomas Krueger
     affiliation: Department of Biochemistry, University of Cambridge, UK
-  - name: Oliver Crook
+  - name: Oliver M. Crook
     affiliation: Department of Chemistry, University of Oxford, Oxford, OX1 3QU, UK, and Kavli Institute for Nanoscience Discovery, Sherrington Rd, Oxford OX1 3QU, UK
   - name: Laurent Gatto
     affiliation: Computational Biology and Bioinformatics, de Duve Institute - UCLouvain, Avenue Hippocrate, 74 - B1.74.10, 1200 Brussels, Belgium
   - name: Kathryn S. Lilley
     affiliation: Cambridge Centre for Proteomics, Department of Biochemistry, University of Cambridge, Cambridge, CB2 1QR, UK
-  - name: Lisa Breckels
+  - name: Lisa M. Breckels
     affiliation: Cambridge Centre for Proteomics, Department of Biochemistry, University of Cambridge, Cambridge, CB2 1QR, UK
 abstract: | 
   \
@@ -599,9 +599,9 @@ software may store this information differently, using a different column identi
 for example. We urge users to familarise themselves with the third party software
 that they have used for the identification search and check the output settings.
 
-The table below outlines how the `File.ID`s correspond to the raw MS files used 
-in the experiment. The value of 'x' represents the HPLC fraction number 1-17 or
-18, as discussed above. 
+Table \@ref(tab:samplestable) outlines how the `File.ID`s correspond to the raw MS
+files used in the experiment. The value of 'x' represents the HPLC fraction number 
+1-17 or 18, as discussed above. 
 
 ```{r samplestable, echo = FALSE}
 tbl <- data.frame(File.Name = c("TMT_Pro_1.x", "TMT_Pro_2.x", "TMT_Pro_3.x"),
@@ -1821,6 +1821,9 @@ To generate peptide-level spatial maps using this workflow:
 2. Extract peptide-level experimental set from `QFeatures` into an `MSnSet`
 3. Continue to use the rest of the workflow in the same way as demonstrated for protein-level data
 
+An example workflow for peptide-level mapping is provided in the Appendix, which
+is available from Zenodo under the identifier [doi:10.5281/zenodo.15100485](http://doi.org/10.5281/zenodo.15100485).
+
 ## Initial assessment of data resolution
 
 Prior to the annotation of marker proteins, it is first necessary to assess the
@@ -2058,13 +2061,14 @@ cl <- cutree(hc, k)
 
 Now that we have a named vector containing all of our proteins with an associated
 hierarchical cluster number, we can regenerate our heatmap and annotate this
-information. To do so, we generate a `data.frame` with a column called `Cluster`
-containing the cluster number and make sure that the `rownames` match the 
-`featureNames` of our `unstim_msn` object. We also define our own colours to 
-match the default colours used by `plot2D` such that our clusters have the same
-colour annotations in our heatmap and dimensionality reduction visualisation.
-Finally, we use the `pheatmap` function as above but pass our row annotation
-`data.frame` to `annotation_row` and our pre-defined colours to `annotation_colors`.
+information (Figure \@ref(fig:hierarchical-clustering), left). To do so, we generate 
+a `data.frame` with a column called `Cluster` containing the cluster number and
+make sure that the `rownames` match the `featureNames` of our `unstim_msn` object.
+We also define our own colours to match the default colours used by `plot2D` such
+that our clusters have the same colour annotations in our heatmap and dimensionality 
+reduction visualisation. Finally, we use the `pheatmap` function as above but pass 
+our row annotation `data.frame` to `annotation_row` and our pre-defined colours
+to `annotation_colors`.
 
 ```{r, eval = FALSE}
 ## Create a dataframe containing cluster annotations
@@ -2104,7 +2108,7 @@ dev.off()
 
 To plot these hierarchical clusters on a dimensionality reduction map, we first
 add the cluster information to the `fData` of our `MSnSet`. We can then use the
-`plot2D` function to generate PCA plots with the discovered clusters annotated. 
+`plot2D` function to generate PCA plots with the discovered clusters annotated (Figure \@ref(fig:hierarchical-clustering), right). 
 As above, we pass our `unstim_msn` object and specify the dimensionality reduction 
 method to use. We also tell the function which column of our `fData` to be used
 for colouring the points - here we use the newly created `hc` column. 
@@ -2253,7 +2257,7 @@ Notice that some proteins are allocated to cluster "0". The "0" category
 denotes proteins which did not fit into one of the 14 discovered clusters.
 
 We can use the `plot2D` function to generate PCA and t-SNE plots with the
-discovered clusters annotated. As before, we pass our `unstim_msn` object and
+discovered clusters annotated (Figure \@ref(fig:plots-hdb)). As before, we pass our `unstim_msn` object and
 specify the dimensionality reduction method we wish to use. We also tell the
 function which column of our `fData` to be used for colouring the points - here
 we use the newly created `hdb_cluster` column. Finally, we pass the argument
@@ -2623,7 +2627,7 @@ uses PC1 and PC2 by default which limits visualisation to compartments resolved
 in these first two dimensions. We can pass a vector of alternative PC dimensions
 to the `dims` argument within `plot2D` to explore resolution in these lower PCs.
 Below we show that the ER and plasma membrane are better differentiated when
-visualising PC1 and PC6.
+visualising PC1 and PC6 (Figure \@ref(fig:diff-pcas-fig)).
 
 ```{r, eval = FALSE}
 par(mfrow = c(1, 2))
@@ -2666,8 +2670,9 @@ data for classification are the marker protein correlation profiles. Therefore,
 it is critical to look directly at these profiles as well as the 2D maps. 
 
 The `plotDist` function within `pRoloc` generates a line plot showing the protein
-distribution profiles. We pass our `unstim_msn` object and subset the proteins
-annotated as `"mitochondrion"` in the `markers` column of the `fData`.
+distribution profiles (Figure \@ref(fig:plotdist-fig)). We pass our `unstim_msn` 
+object and subset the proteins annotated as `"mitochondrion"` in the `markers`
+column of the `fData`.
 
 ```{r, fig.width=5, fig.height=3, eval=FALSE}
 ## Subset mitochondrial markers
@@ -2797,8 +2802,9 @@ pRolocVis(object = unstim_msn,
 knitr::include_graphics("figs/pRolocVis_screenshot.png", error = FALSE)
 ```
 
-Using this interactive visualisation tool enables us to easily identify which
-proteins the outlier points and profiles correspond to.
+Using this interactive visualisation tool (Figure \@ref(fig:pRolocvis-picture)) 
+enables us to easily identify which proteins the outlier points and profiles
+correspond to.
 
 
 #### Quantifying resolution using `QSep`
@@ -2920,8 +2926,8 @@ knitr::include_graphics("figs/qsep_levelplots_both.png", error = FALSE)
 Looking at the pairwise QSep scores is particularly useful in identifying which
 subcellular compartments are the least resolved from each other. In the use-case
 data the plasma membrane (PM) and Endoplasmic-reticulum-Golgi intermediate 
-compartment (ERGIC) have the lowest pairwise resolution. When resolution
-between two subcellular compartments is low (i.e., their pairwise QSep scores
+compartment (ERGIC) have the lowest pairwise resolution (Figure \@ref(fig:qsep-level-plots)).
+When resolution between two subcellular compartments is low (i.e., their pairwise QSep scores
 are low) there is a higher chance of proteins being misclassified between these 
 compartments during downstream machine learning. Indeed, a subcellular
 compartment could have a high average QSep score, but the ability to correctly
@@ -3199,9 +3205,6 @@ data using the `svmClassification` function. We pass the optimised values of
 `sigma` and `cost` and again provide our weights to `class.weights`.
 
 ```{r}
-## Check optimised parameters
-getParams(object = svm_params)
-
 ## Carry out SVM classification using optimised parameters
 unstim_msn <- svmClassification(object = unstim_msn, 
                                 fcol = "markers",
@@ -3677,14 +3680,15 @@ dev.off()
 knitr::include_graphics("figs/tagm_mcmc_trace_dens.pdf", error = FALSE)
 ```
 
-The trace plots show how the number of outliers varies across each iteration. 
+The trace plots show how the number of outliers varies across each iteration (Figure \@ref(fig:mcmc-figs), left). 
 We point out here that although we ran the algorithm for 10,000 iterations,
 we had a burin of 1000, and thinned (discarded) data at every 20 iterations, 
 this leaves 450 samples per chain (x-axis, left plots). The density plots show 
-the number of outliers expressed as a probability density. We see that all chains
-are centered around 260 outliers per run. If there was a chain with wildly 
-different outliers (i.e. centered around a different value) to the others,
-we could consider removing this chain and re-computing the the Gelman diagnostics. 
+the number of outliers expressed as a probability density (Figure \@ref(fig:mcmc-figs), right).
+We see that all chains are centered around 260 outliers per run. If there was a
+chain with wildly different outliers (i.e. centered around a different value) to 
+the others, we could consider removing this chain and re-computing the the Gelman
+diagnostics. 
 
 For the sake of demonstration to show users how to discard a bad chain, let's
 remove chain 2. Taking 3 chains forward for modelling is sufficient. We remove
@@ -3818,7 +3822,7 @@ for a given protein of interest. We plot protein O60645, an
 exocyst complex protein known to be involved in vesicle transport by tethering
 secretory vesicles to the plasma membrane. The violin plot reveals uncertainty
 in the localisation of this protein between the ERGIC complex, golgi apparatus
-and plasma membrane, reflective of its function.
+and plasma membrane, reflective of its function (Figure \@ref(fig:mcmc-violin)).
 
 ```{r, eval=FALSE}
 plot(mcmc_converged, "O60645")
@@ -3855,10 +3859,10 @@ plot2Dmethods
 ```
 
 We can plot the data using the default `plot2D` setting which is a PCA
-visualisation and tell `plot2D` where the markers and results are located. For
-example, to plot the markers we would pass `fcol = "markers"` and to plot the
-results of the SVM classification after thresholding we would pass 
-`fcol = "svm.pred"`.
+visualisation and tell `plot2D` where the markers and results are located 
+(Figure \@ref(fig:svm-pca-res), left). For example, to plot the markers we would 
+pass `fcol = "markers"` and to plot the results of the SVM classification after 
+thresholding we would pass `fcol = "svm.pred"` (Figure \@ref(fig:svm-pca-res), right).
 
 ```{r, eval = FALSE}
 par(mfrow = c(1, 2))
@@ -3901,7 +3905,7 @@ UMAP, t-SNE and linear discriminant analysis (LDA).
 pcas <- unstim_msn %>%
   plot2D(method = "PCA", plot = FALSE)
 
-## kernal PCA
+## UMAP
 set.seed(399)
 umap <- unstim_msn %>%
   plot2D(method = "UMAP", plot = FALSE)
@@ -3922,7 +3926,8 @@ lda <- unstim_msn %>%
 load("output/viz.rda")
 ```
 
-We can now pass these coordinates to `plot2D` to visualise the data. Since they
+We can now pass these coordinates to `plot2D` to visualise the data 
+(Figure \@ref(fig:svm-maps)). Since they
 have been computed once, we don't have to compute them again for subsequent
 visualisations so we can pass `method = "none"`. We pass `fcol = "svm.pred"`
 to visualise the results from the SVM classification.
@@ -3984,7 +3989,8 @@ pRolocVis(unstim_msn, fcol = "svm.pred")
 
 Upon loading of the GUI it is helpful to navigate to the "Table Selection" tab
 of the app and click on the "Master.Protein.Descriptions" and a column
-containing subcellular localisation information, here we select "svm.pred". The
+containing subcellular localisation information, here we select "svm.pred" 
+(Figure \@ref(fig:pRolocvis-complex-gui)). The
 protein descriptions were output with the results of our third party search in
 Proteome Discoverer so we advise users to be mindful that natively searching for
 protein descriptions will be dependent on what information is contained in the
@@ -4320,8 +4326,8 @@ knitr::include_graphics("figs/gp_plot.pdf", error = FALSE)
 ```
 
 We see that the fit looks sensible and the predictives (shown in black) overlay
-nicely with the marker profiles of the unstimulated replicate 1 data. Users should
-assess the fit of GPs for each replicate of each condition by altering the above 
+nicely with the marker profiles of the unstimulated replicate 1 data Figure \@ref(fig:fig-gps-bandle).
+Users should assess the fit of GPs for each replicate of each condition by altering the above 
 code to extract each item in the `input_bandle` and `gpParams` lists (i.e., changing
 the indices inside of the `[[]]`). The GPs should fit all datasets. If the posterior 
 predictives do not fit the pattern of marker proteins, users should test alternative 
@@ -4811,7 +4817,9 @@ or lie on the classification boundaries.
 
 In order to plot the proteins allocated confidently to a single localisation we
 first need to populate all datasets with the prediction results. Currently the 
-results are only appended to the first `MSnSet` of each condition.
+results are only appended to the first `MSnSet` of each condition. We then use
+the `plot2D` function, as demonstrated previously, to plot the results of BANDLE
+classification per condition per replicate (Figure \@ref(fig:plot-pcas-bandle-all)).
 
 ```{r, eval = FALSE}
 par(mfrow = c(4, 2))
@@ -4916,7 +4924,7 @@ do.call(grid.arrange, g)
 <!-- dev.off() -->
 <!-- ``` -->
 
-```{r bandle-violin1, out.width = '100%', echo = FALSE, fig.cap = "Violin plots displaying the BANDLE MCMC distribution of localisation probabilities across the subcellular niches in the data. Nine proteins are highlighted in the x-ray stimulated data that did not get asisgned a main localisation after thresholding."}
+```{r bandle-violin1, out.width = '100%', echo = FALSE, fig.cap = "Violin plots displaying the BANDLE MCMC distribution of localisation probabilities across the subcellular niches in the data. Nine proteins are highlighted in the unstimulated data that did not get asisgned a main localisation after thresholding."}
 knitr::include_graphics("figs/unstim_unknown_violins.pdf", error = FALSE)
 ```
 
@@ -5301,21 +5309,40 @@ funding acquisition, supervision, writing - review and editing; L. M. B.
 conceptualization, investigation, methodology, project administration, software,
 validation, writing - original draft preparation, review and editing.
 
+# Competing interests
+
+The authors declare no competing interests.
+
 # Data availability
+
+Raw mass spectrometry data is freely available online through ProteomeXchange
+via the PRIDE repository under the identifier PXD055123. The data required to run
+the main workflow and appendix are available from Zenodo under the 
+identifier [doi:10.5281/zenodo.15100485](http://doi.org/10.5281/zenodo.15100485) [@dataref].
+Appendix also available from [doi:10.5281/zenodo.15100485](http://doi.org/10.5281/zenodo.15100485) [@dataref]
+and the associated GitHub repository [https://github.com/CambridgeCentreForProteomics/f1000_subcellular_proteomics](https://github.com/CambridgeCentreForProteomics/f1000_subcellular_proteomics).
+
+
+# Software availability
 
 This workflow was written in the [R Statistical programming language](https://www.r-project.org) and uses
 freely available open-source software packages from CRAN and Bioconductor. 
 Version numbers for all packages are shown in the Session information section.
 
-Raw mass spectrometry data is freely available online through ProteomeXchange
-via the PRIDE repository under the identifier PXD055123.
-
-Source code and appendix located at GitHub [https://github.com/CambridgeCentreForProteomics/f1000_subcellular_proteomics](https://github.com/CambridgeCentreForProteomics/f1000_subcellular_proteomics). Files and appendix are also available from Zenodo under the 
-identifier [doi:10.5281/zenodo.15100485](http://doi.org/10.5281/zenodo.15100485).
+Source code available from: [https://github.com/CambridgeCentreForProteomics/f1000_subcellular_proteomics](https://github.com/CambridgeCentreForProteomics/f1000_subcellular_proteomics). Archived
+software available from [doi:10.5281/zenodo.15100485](http://doi.org/10.5281/zenodo.15100485) [@dataref].
+Files and appendix are also available from Zenodo under the identifier
+[doi:10.5281/zenodo.15100485](http://doi.org/10.5281/zenodo.15100485). 
+License: CC-BY 4.0.
 
 # Acknowledgements
 
-The authors would like to thank Kieran J. A. McCaskie and Suyeon Kim from the
-Cambridge Centre for Proteomics, University of Cambridge for trialling this workflow.
+The authors would like to thank Kieran J. A. McCaskie and Suyeon Kim from the 
+Cambridge Centre for Proteomics, University of Cambridge for trialing this workflow.
+The authors would like to thank their funders. C. H. was funded by a BBSRC CASE 
+award with AstraZeneca (BB/W509929/1), L. G. was funded by a Research Foundation 
+Flanders FWO grant (G028821N), O. M. C. was funded by a Medical Research Council 
+grant (MR/Y010078/1) and L. M. B. was funded by a BBSRC sLoLa grant (BB/T002182/1). 
+Funders had no active involvement in conceptualization or writing.
 
 # References

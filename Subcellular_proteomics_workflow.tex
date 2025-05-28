@@ -104,10 +104,10 @@ LOPIT, QFeatures, pRoloc, bandle},
 
 \author[1]{Charlotte Hutchings}
 \author[2]{Thomas Krueger}
-\author[3]{Oliver Crook}
+\author[3]{Oliver M. Crook}
 \author[4]{Laurent Gatto}
 \author[1]{Kathryn S. Lilley}
-\author[1]{Lisa Breckels}
+\author[1]{Lisa M. Breckels}
 \affil[1]{Cambridge Centre for Proteomics, Department of Biochemistry, University of Cambridge, Cambridge, CB2 1QR, UK}
 \affil[2]{Department of Biochemistry, University of Cambridge, UK}
 \affil[3]{Department of Chemistry, University of Oxford, Oxford, OX1 3QU, UK, and Kavli Institute for Nanoscience Discovery, Sherrington Rd, Oxford OX1 3QU, UK}
@@ -766,9 +766,9 @@ software may store this information differently, using a different column identi
 for example. We urge users to familarise themselves with the third party software
 that they have used for the identification search and check the output settings.
 
-The table below outlines how the \texttt{File.ID}s correspond to the raw MS files used
-in the experiment. The value of `x' represents the HPLC fraction number 1-17 or
-18, as discussed above.
+Table \ref{tab:samplestable} outlines how the \texttt{File.ID}s correspond to the raw MS
+files used in the experiment. The value of `x' represents the HPLC fraction number
+1-17 or 18, as discussed above.
 
 \begin{table}[H]
 \centering
@@ -2260,6 +2260,9 @@ To generate peptide-level spatial maps using this workflow:
   Continue to use the rest of the workflow in the same way as demonstrated for protein-level data
 \end{enumerate}
 
+An example workflow for peptide-level mapping is provided in the Appendix, which
+is available from Zenodo under the identifier \href{http://doi.org/10.5281/zenodo.15100485}{doi:10.5281/zenodo.15100485}.
+
 \subsection{Initial assessment of data resolution}\label{initial-assessment-of-data-resolution}
 
 Prior to the annotation of marker proteins, it is first necessary to assess the
@@ -2499,13 +2502,14 @@ profiling experiments resolve 10-15 subcellular compartments.
 
 Now that we have a named vector containing all of our proteins with an associated
 hierarchical cluster number, we can regenerate our heatmap and annotate this
-information. To do so, we generate a \texttt{data.frame} with a column called \texttt{Cluster}
-containing the cluster number and make sure that the \texttt{rownames} match the
-\texttt{featureNames} of our \texttt{unstim\_msn} object. We also define our own colours to
-match the default colours used by \texttt{plot2D} such that our clusters have the same
-colour annotations in our heatmap and dimensionality reduction visualisation.
-Finally, we use the \texttt{pheatmap} function as above but pass our row annotation
-\texttt{data.frame} to \texttt{annotation\_row} and our pre-defined colours to \texttt{annotation\_colors}.
+information (Figure \ref{fig:hierarchical-clustering}, left). To do so, we generate
+a \texttt{data.frame} with a column called \texttt{Cluster} containing the cluster number and
+make sure that the \texttt{rownames} match the \texttt{featureNames} of our \texttt{unstim\_msn} object.
+We also define our own colours to match the default colours used by \texttt{plot2D} such
+that our clusters have the same colour annotations in our heatmap and dimensionality
+reduction visualisation. Finally, we use the \texttt{pheatmap} function as above but pass
+our row annotation \texttt{data.frame} to \texttt{annotation\_row} and our pre-defined colours
+to \texttt{annotation\_colors}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -2528,7 +2532,7 @@ Finally, we use the \texttt{pheatmap} function as above but pass our row annotat
 
 To plot these hierarchical clusters on a dimensionality reduction map, we first
 add the cluster information to the \texttt{fData} of our \texttt{MSnSet}. We can then use the
-\texttt{plot2D} function to generate PCA plots with the discovered clusters annotated.
+\texttt{plot2D} function to generate PCA plots with the discovered clusters annotated (Figure \ref{fig:hierarchical-clustering}, right).
 As above, we pass our \texttt{unstim\_msn} object and specify the dimensionality reduction
 method to use. We also tell the function which column of our \texttt{fData} to be used
 for colouring the points - here we use the newly created \texttt{hc} column.
@@ -2675,7 +2679,7 @@ Notice that some proteins are allocated to cluster ``0''. The ``0'' category
 denotes proteins which did not fit into one of the 14 discovered clusters.
 
 We can use the \texttt{plot2D} function to generate PCA and t-SNE plots with the
-discovered clusters annotated. As before, we pass our \texttt{unstim\_msn} object and
+discovered clusters annotated (Figure \ref{fig:plots-hdb}). As before, we pass our \texttt{unstim\_msn} object and
 specify the dimensionality reduction method we wish to use. We also tell the
 function which column of our \texttt{fData} to be used for colouring the points - here
 we use the newly created \texttt{hdb\_cluster} column. Finally, we pass the argument
@@ -3104,7 +3108,7 @@ uses PC1 and PC2 by default which limits visualisation to compartments resolved
 in these first two dimensions. We can pass a vector of alternative PC dimensions
 to the \texttt{dims} argument within \texttt{plot2D} to explore resolution in these lower PCs.
 Below we show that the ER and plasma membrane are better differentiated when
-visualising PC1 and PC6.
+visualising PC1 and PC6 (Figure \ref{fig:diff-pcas-fig}).
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -3138,8 +3142,9 @@ data for classification are the marker protein correlation profiles. Therefore,
 it is critical to look directly at these profiles as well as the 2D maps.
 
 The \texttt{plotDist} function within \texttt{pRoloc} generates a line plot showing the protein
-distribution profiles. We pass our \texttt{unstim\_msn} object and subset the proteins
-annotated as \texttt{"mitochondrion"} in the \texttt{markers} column of the \texttt{fData}.
+distribution profiles (Figure \ref{fig:plotdist-fig}). We pass our \texttt{unstim\_msn}
+object and subset the proteins annotated as \texttt{"mitochondrion"} in the \texttt{markers}
+column of the \texttt{fData}.
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -3255,8 +3260,9 @@ function, specify a method of dimensionality reduction and a column from our
 \caption{Screenshot of the pRolocVis GUI application}\label{fig:pRolocvis-picture}
 \end{figure}
 
-Using this interactive visualisation tool enables us to easily identify which
-proteins the outlier points and profiles correspond to.
+Using this interactive visualisation tool (Figure \ref{fig:pRolocvis-picture})
+enables us to easily identify which proteins the outlier points and profiles
+correspond to.
 
 \paragraph{\texorpdfstring{Quantifying resolution using \texttt{QSep}}{Quantifying resolution using QSep}}\label{quantifying-resolution-using-qsep}
 
@@ -3458,8 +3464,8 @@ score we are interested in.
 Looking at the pairwise QSep scores is particularly useful in identifying which
 subcellular compartments are the least resolved from each other. In the use-case
 data the plasma membrane (PM) and Endoplasmic-reticulum-Golgi intermediate
-compartment (ERGIC) have the lowest pairwise resolution. When resolution
-between two subcellular compartments is low (i.e., their pairwise QSep scores
+compartment (ERGIC) have the lowest pairwise resolution (Figure \ref{fig:qsep-level-plots}).
+When resolution between two subcellular compartments is low (i.e., their pairwise QSep scores
 are low) there is a higher chance of proteins being misclassified between these
 compartments during downstream machine learning. Indeed, a subcellular
 compartment could have a high average QSep score, but the ability to correctly
@@ -3853,18 +3859,6 @@ used to automatically return the \emph{best} parameters.
 Now that we have our optimised parameters, we can apply the SVM model to our
 data using the \texttt{svmClassification} function. We pass the optimised values of
 \texttt{sigma} and \texttt{cost} and again provide our weights to \texttt{class.weights}.
-
-\begin{Shaded}
-\begin{Highlighting}[]
-\DocumentationTok{\#\# Check optimised parameters}
-\FunctionTok{getParams}\NormalTok{(}\AttributeTok{object =}\NormalTok{ svm\_params)}
-\end{Highlighting}
-\end{Shaded}
-
-\begin{verbatim}
-## sigma  cost 
-##   0.1  16.0
-\end{verbatim}
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4453,14 +4447,15 @@ In the below code chunk we plot trace and density plots for each chain.
 \caption{Trace (left) and density (right) plots for the MCMC chains output from running a TAGM-MCMC anaysis.}\label{fig:mcmc-figs}
 \end{figure}
 
-The trace plots show how the number of outliers varies across each iteration.
+The trace plots show how the number of outliers varies across each iteration (Figure \ref{fig:mcmc-figs}, left).
 We point out here that although we ran the algorithm for 10,000 iterations,
 we had a burin of 1000, and thinned (discarded) data at every 20 iterations,
 this leaves 450 samples per chain (x-axis, left plots). The density plots show
-the number of outliers expressed as a probability density. We see that all chains
-are centered around 260 outliers per run. If there was a chain with wildly
-different outliers (i.e.~centered around a different value) to the others,
-we could consider removing this chain and re-computing the the Gelman diagnostics.
+the number of outliers expressed as a probability density (Figure \ref{fig:mcmc-figs}, right).
+We see that all chains are centered around 260 outliers per run. If there was a
+chain with wildly different outliers (i.e.~centered around a different value) to
+the others, we could consider removing this chain and re-computing the the Gelman
+diagnostics.
 
 For the sake of demonstration to show users how to discard a bad chain, let's
 remove chain 2. Taking 3 chains forward for modelling is sufficient. We remove
@@ -4666,7 +4661,7 @@ for a given protein of interest. We plot protein O60645, an
 exocyst complex protein known to be involved in vesicle transport by tethering
 secretory vesicles to the plasma membrane. The violin plot reveals uncertainty
 in the localisation of this protein between the ERGIC complex, golgi apparatus
-and plasma membrane, reflective of its function.
+and plasma membrane, reflective of its function (Figure \ref{fig:mcmc-violin}).
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4710,10 +4705,10 @@ available for use with \texttt{plot2D} see \texttt{plot2Dmethods} which are also
 \end{verbatim}
 
 We can plot the data using the default \texttt{plot2D} setting which is a PCA
-visualisation and tell \texttt{plot2D} where the markers and results are located. For
-example, to plot the markers we would pass \texttt{fcol\ =\ "markers"} and to plot the
-results of the SVM classification after thresholding we would pass
-\texttt{fcol\ =\ "svm.pred"}.
+visualisation and tell \texttt{plot2D} where the markers and results are located
+(Figure \ref{fig:svm-pca-res}, left). For example, to plot the markers we would
+pass \texttt{fcol\ =\ "markers"} and to plot the results of the SVM classification after
+thresholding we would pass \texttt{fcol\ =\ "svm.pred"} (Figure \ref{fig:svm-pca-res}, right).
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -4752,7 +4747,7 @@ UMAP, t-SNE and linear discriminant analysis (LDA).
 \NormalTok{pcas }\OtherTok{\textless{}{-}}\NormalTok{ unstim\_msn }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{plot2D}\NormalTok{(}\AttributeTok{method =} \StringTok{"PCA"}\NormalTok{, }\AttributeTok{plot =} \ConstantTok{FALSE}\NormalTok{)}
 
-\DocumentationTok{\#\# kernal PCA}
+\DocumentationTok{\#\# UMAP}
 \FunctionTok{set.seed}\NormalTok{(}\DecValTok{399}\NormalTok{)}
 \NormalTok{umap }\OtherTok{\textless{}{-}}\NormalTok{ unstim\_msn }\SpecialCharTok{\%\textgreater{}\%}
   \FunctionTok{plot2D}\NormalTok{(}\AttributeTok{method =} \StringTok{"UMAP"}\NormalTok{, }\AttributeTok{plot =} \ConstantTok{FALSE}\NormalTok{)}
@@ -4769,7 +4764,8 @@ UMAP, t-SNE and linear discriminant analysis (LDA).
 \end{Highlighting}
 \end{Shaded}
 
-We can now pass these coordinates to \texttt{plot2D} to visualise the data. Since they
+We can now pass these coordinates to \texttt{plot2D} to visualise the data
+(Figure \ref{fig:svm-maps}). Since they
 have been computed once, we don't have to compute them again for subsequent
 visualisations so we can pass \texttt{method\ =\ "none"}. We pass \texttt{fcol\ =\ "svm.pred"}
 to visualise the results from the SVM classification.
@@ -4823,7 +4819,8 @@ access a searchable version of our fData.
 
 Upon loading of the GUI it is helpful to navigate to the ``Table Selection'' tab
 of the app and click on the ``Master.Protein.Descriptions'' and a column
-containing subcellular localisation information, here we select ``svm.pred''. The
+containing subcellular localisation information, here we select ``svm.pred''
+(Figure \ref{fig:pRolocvis-complex-gui}). The
 protein descriptions were output with the results of our third party search in
 Proteome Discoverer so we advise users to be mindful that natively searching for
 protein descriptions will be dependent on what information is contained in the
@@ -5221,8 +5218,8 @@ we can visually assess their suitability using the \texttt{plotGPmatern} functio
 \end{figure}
 
 We see that the fit looks sensible and the predictives (shown in black) overlay
-nicely with the marker profiles of the unstimulated replicate 1 data. Users should
-assess the fit of GPs for each replicate of each condition by altering the above
+nicely with the marker profiles of the unstimulated replicate 1 data Figure \ref{fig:fig-gps-bandle}.
+Users should assess the fit of GPs for each replicate of each condition by altering the above
 code to extract each item in the \texttt{input\_bandle} and \texttt{gpParams} lists (i.e., changing
 the indices inside of the \texttt{{[}{[}{]}{]}}). The GPs should fit all datasets. If the posterior
 predictives do not fit the pattern of marker proteins, users should test alternative
@@ -5829,7 +5826,9 @@ or lie on the classification boundaries.
 
 In order to plot the proteins allocated confidently to a single localisation we
 first need to populate all datasets with the prediction results. Currently the
-results are only appended to the first \texttt{MSnSet} of each condition.
+results are only appended to the first \texttt{MSnSet} of each condition. We then use
+the \texttt{plot2D} function, as demonstrated previously, to plot the results of BANDLE
+classification per condition per replicate (Figure \ref{fig:plot-pcas-bandle-all}).
 
 \begin{Shaded}
 \begin{Highlighting}[]
@@ -5933,7 +5932,7 @@ first 9 proteins which did not get assigned a main subcellular localisation.
 
 }
 
-\caption{Violin plots displaying the BANDLE MCMC distribution of localisation probabilities across the subcellular niches in the data. Nine proteins are highlighted in the x-ray stimulated data that did not get asisgned a main localisation after thresholding.}\label{fig:bandle-violin1}
+\caption{Violin plots displaying the BANDLE MCMC distribution of localisation probabilities across the subcellular niches in the data. Nine proteins are highlighted in the unstimulated data that did not get asisgned a main localisation after thresholding.}\label{fig:bandle-violin1}
 \end{figure}
 
 \begin{Shaded}
@@ -6425,7 +6424,7 @@ avoid such errors.
 \begin{verbatim}
 ## R version 4.5.0 (2025-04-11)
 ## Platform: x86_64-apple-darwin20
-## Running under: macOS Sequoia 15.4.1
+## Running under: macOS Sequoia 15.5
 ## 
 ## Matrix products: default
 ## BLAS:   /Library/Frameworks/R.framework/Versions/4.5-x86_64/Resources/lib/libRblas.0.dylib 
@@ -6544,22 +6543,40 @@ funding acquisition, supervision, writing - review and editing; L. M. B.
 conceptualization, investigation, methodology, project administration, software,
 validation, writing - original draft preparation, review and editing.
 
+\section{Competing interests}\label{competing-interests}
+
+The authors declare no competing interests.
+
 \section{Data availability}\label{data-availability}
+
+Raw mass spectrometry data is freely available online through ProteomeXchange
+via the PRIDE repository under the identifier PXD055123. The data required to run
+the main workflow and appendix are available from Zenodo under the
+identifier \href{http://doi.org/10.5281/zenodo.15100485}{doi:10.5281/zenodo.15100485} \citep{dataref}.
+Appendix also available from \href{http://doi.org/10.5281/zenodo.15100485}{doi:10.5281/zenodo.15100485} \citep{dataref}
+and the associated GitHub repository \url{https://github.com/CambridgeCentreForProteomics/f1000_subcellular_proteomics}.
+
+\section{Software availability}\label{software-availability}
 
 This workflow was written in the \href{https://www.r-project.org}{R Statistical programming language} and uses
 freely available open-source software packages from CRAN and Bioconductor.
 Version numbers for all packages are shown in the Session information section.
 
-Raw mass spectrometry data is freely available online through ProteomeXchange
-via the PRIDE repository under the identifier PXD055123.
-
-Source code and appendix located at GitHub \url{https://github.com/CambridgeCentreForProteomics/f1000_subcellular_proteomics}. Files and appendix are also available from Zenodo under the
-identifier \href{http://doi.org/10.5281/zenodo.15100485}{doi:10.5281/zenodo.15100485}.
+Source code available from: \url{https://github.com/CambridgeCentreForProteomics/f1000_subcellular_proteomics}. Archived
+software available from \href{http://doi.org/10.5281/zenodo.15100485}{doi:10.5281/zenodo.15100485} \citep{dataref}.
+Files and appendix are also available from Zenodo under the identifier
+\href{http://doi.org/10.5281/zenodo.15100485}{doi:10.5281/zenodo.15100485}.
+License: CC-BY 4.0.
 
 \section{Acknowledgements}\label{acknowledgements}
 
 The authors would like to thank Kieran J. A. McCaskie and Suyeon Kim from the
-Cambridge Centre for Proteomics, University of Cambridge for trialling this workflow.
+Cambridge Centre for Proteomics, University of Cambridge for trialing this workflow.
+The authors would like to thank their funders. C. H. was funded by a BBSRC CASE
+award with AstraZeneca (BB/W509929/1), L. G. was funded by a Research Foundation
+Flanders FWO grant (G028821N), O. M. C. was funded by a Medical Research Council
+grant (MR/Y010078/1) and L. M. B. was funded by a BBSRC sLoLa grant (BB/T002182/1).
+Funders had no active involvement in conceptualization or writing.
 
 \renewcommand\refname{References}
 {\small\bibliography{workflow.bib}}

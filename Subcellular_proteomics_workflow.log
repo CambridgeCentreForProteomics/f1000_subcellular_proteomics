@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.15)  16 MAY 2025 10:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.5.15)  28 MAY 2025 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1139,11 +1139,6 @@ LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
 (Font)              scaled to size 6.18097pt on input line 117.
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
 (Font)              scaled to size 6.72005pt on input line 117.
-
-Underfull \hbox (badness 2103) in paragraph at lines 117--117
-[]\OT1/phv/b/n/16 Charlotte Hutchings$[]$, Thomas Krueger$[]$, Oliver Crook$[]$, Lau-rent
- []
-
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
 (Font)              scaled to size 8.64006pt on input line 117.
 LaTeX Font Info:    Font shape `OT1/mdbch/m/n' will be
@@ -1216,7 +1211,7 @@ LaTeX Font Info:    Font shape `OT1/phv/b/n' will be
 
 LaTeX Font Info:    Font shape `T1/mdbch/m/fsc' will be
 (Font)              scaled to size 8.64006pt on input line 153.
-<F1000header.png, id=276, 180.675pt x 24.84282pt>
+<F1000header.png, id=284, 180.675pt x 24.84282pt>
 File: F1000header.png Graphic file (type png)
 <use F1000header.png>
 Package pdftex.def Info: F1000header.png  used on input line 153.
@@ -1263,7 +1258,7 @@ LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
 
 LaTeX Font Info:    Font shape `T1/mdbch/b/n' will be
 (Font)              scaled to size 8.64006pt on input line 156.
-<figs/pcp_steps.png, id=298, 596.82974pt x 466.9445pt>
+<figs/pcp_steps.png, id=306, 596.82974pt x 466.9445pt>
 File: figs/pcp_steps.png Graphic file (type png)
 <use figs/pcp_steps.png>
 Package pdftex.def Info: figs/pcp_steps.png  used on input line 183.
@@ -1287,7 +1282,7 @@ LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
 
 
 [3]
-<figs/workflow_outline.png, id=343, 736.1904pt x 654.7662pt>
+<figs/workflow_outline.png, id=351, 736.1904pt x 654.7662pt>
 File: figs/workflow_outline.png Graphic file (type png)
 <use figs/workflow_outline.png>
 Package pdftex.def Info: figs/workflow_outline.png  used on input line 326.
@@ -1315,7 +1310,7 @@ LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 444.
 LaTeX Font Info:    Font shape `OT1/cmtt/m/n' will be
 (Font)              scaled to size 10.72006pt on input line 444.
-<figs/se_and_qf_and_msnset.png, id=388, 613.0905pt x 250.7769pt>
+<figs/se_and_qf_and_msnset.png, id=396, 613.0905pt x 250.7769pt>
 File: figs/se_and_qf_and_msnset.png Graphic file (type png)
 <use figs/se_and_qf_and_msnset.png>
 Package pdftex.def Info: figs/se_and_qf_and_msnset.png  used on input line 467.
@@ -1353,7 +1348,7 @@ Overfull \hbox (21.35336pt too wide) in paragraph at lines 978--983
 
 
 [12]
-<figs/qc_plots.png, id=451, 505.89pt x 650.43pt>
+<figs/qc_plots.png, id=460, 505.89pt x 650.43pt>
 File: figs/qc_plots.png Graphic file (type png)
 <use figs/qc_plots.png>
 Package pdftex.def Info: figs/qc_plots.png  used on input line 1047.
@@ -1375,7 +1370,7 @@ Package pdftex.def Info: figs/qc_plots.png  used on input line 1047.
 [19]
 
 [20]
-<figs/missing_values.png, id=514, 710.4141pt x 748.7172pt>
+<figs/missing_values.png, id=523, 710.4141pt x 748.7172pt>
 File: figs/missing_values.png Graphic file (type png)
 <use figs/missing_values.png>
 Package pdftex.def Info: figs/missing_values.png  used on input line 1618.
@@ -1417,26 +1412,26 @@ Overfull \hbox (9.56586pt too wide) in paragraph at lines 2210--2218
 
 
 [28]
-<figs/map_fcol_null.pdf, id=591, 867.24pt x 433.62pt>
+<figs/map_fcol_null.pdf, id=601, 867.24pt x 433.62pt>
 File: figs/map_fcol_null.pdf Graphic file (type pdf)
 <use figs/map_fcol_null.pdf>
-Package pdftex.def Info: figs/map_fcol_null.pdf  used on input line 2311.
+Package pdftex.def Info: figs/map_fcol_null.pdf  used on input line 2314.
 (pdftex.def)             Requested size: 368.74506pt x 184.37538pt.
 
 
 [29]
-<figs/heatmap_protein_quant.pdf, id=604, 505.89pt x 505.89pt>
+<figs/heatmap_protein_quant.pdf, id=614, 505.89pt x 505.89pt>
 File: figs/heatmap_protein_quant.pdf Graphic file (type pdf)
 <use figs/heatmap_protein_quant.pdf>
-Package pdftex.def Info: figs/heatmap_protein_quant.pdf  used on input line 2377.
+Package pdftex.def Info: figs/heatmap_protein_quant.pdf  used on input line 2380.
 (pdftex.def)             Requested size: 286.8024pt x 286.80872pt.
 
 
 [30 <./figs/map_fcol_null.pdf>]
-<figs/marker_curation.png, id=620, 645.3711pt x 842.6682pt>
+<figs/marker_curation.png, id=630, 645.3711pt x 842.6682pt>
 File: figs/marker_curation.png Graphic file (type png)
 <use figs/marker_curation.png>
-Package pdftex.def Info: figs/marker_curation.png  used on input line 2429.
+Package pdftex.def Info: figs/marker_curation.png  used on input line 2432.
 (pdftex.def)             Requested size: 368.74506pt x 481.4831pt.
 
 
@@ -1445,34 +1440,34 @@ Package pdftex.def Info: figs/marker_curation.png  used on input line 2429.
 [32 <./figs/marker_curation.png>]
 
 [33]
-<figs/hierarchical_clustering_horizontal.png, id=655, 587.0733pt x 334.1283pt>
+<figs/hierarchical_clustering_horizontal.png, id=668, 587.0733pt x 334.1283pt>
 File: figs/hierarchical_clustering_horizontal.png Graphic file (type png)
 <use figs/hierarchical_clustering_horizontal.png>
-Package pdftex.def Info: figs/hierarchical_clustering_horizontal.png  used on input line 2553.
+Package pdftex.def Info: figs/hierarchical_clustering_horizontal.png  used on input line 2557.
 (pdftex.def)             Requested size: 409.71951pt x 233.18973pt.
 
 
 [34 <./figs/hierarchical_clustering_horizontal.png>]
-<figs/hdbscan_barplot.pdf, id=671, 361.35pt x 325.215pt>
+<figs/hdbscan_barplot.pdf, id=683, 361.35pt x 325.215pt>
 File: figs/hdbscan_barplot.pdf Graphic file (type pdf)
 <use figs/hdbscan_barplot.pdf>
-Package pdftex.def Info: figs/hdbscan_barplot.pdf  used on input line 2604.
+Package pdftex.def Info: figs/hdbscan_barplot.pdf  used on input line 2608.
 (pdftex.def)             Requested size: 204.85976pt x 184.37207pt.
 
 
 [35 <./figs/hdbscan_barplot.pdf>]
-<figs/hdbscan_results.pdf, id=684, 867.24pt x 433.62pt>
+<figs/hdbscan_results.pdf, id=697, 867.24pt x 433.62pt>
 File: figs/hdbscan_results.pdf Graphic file (type pdf)
 <use figs/hdbscan_results.pdf>
-Package pdftex.def Info: figs/hdbscan_results.pdf  used on input line 2708.
+Package pdftex.def Info: figs/hdbscan_results.pdf  used on input line 2712.
 (pdftex.def)             Requested size: 368.74506pt x 184.37538pt.
 
 
 [36 <./figs/hdbscan_results.pdf>]
-<figs/go_barplot.pdf, id=708, 578.16pt x 361.35pt>
+<figs/go_barplot.pdf, id=721, 578.16pt x 361.35pt>
 File: figs/go_barplot.pdf Graphic file (type pdf)
 <use figs/go_barplot.pdf>
-Package pdftex.def Info: figs/go_barplot.pdf  used on input line 2806.
+Package pdftex.def Info: figs/go_barplot.pdf  used on input line 2810.
 (pdftex.def)             Requested size: 327.77686pt x 204.85786pt.
 
 
@@ -1481,66 +1476,66 @@ Package pdftex.def Info: figs/go_barplot.pdf  used on input line 2806.
 [38 <./figs/go_barplot.pdf>]
 
 [39]
-Overfull \hbox (1.90315pt too wide) in paragraph at lines 3037--3043
+Overfull \hbox (1.90315pt too wide) in paragraph at lines 3041--3047
 \T1/cmtt/m/it/9 fData(unstim_msn)[, "markers_initial"] <- NULL\T1/mdbch/m/n/9 . Ad-di-tion-ally, if you wish to use a dif-fer-ent name
  []
 
 
 
 [40]
-<figs/og_mrk_maps.pdf, id=743, 867.24pt x 433.62pt>
+<figs/og_mrk_maps.pdf, id=756, 867.24pt x 433.62pt>
 File: figs/og_mrk_maps.pdf Graphic file (type pdf)
 <use figs/og_mrk_maps.pdf>
-Package pdftex.def Info: figs/og_mrk_maps.pdf  used on input line 3090.
+Package pdftex.def Info: figs/og_mrk_maps.pdf  used on input line 3094.
 (pdftex.def)             Requested size: 368.74506pt x 184.37538pt.
 
 
 [41 <./figs/og_mrk_maps.pdf>]
-<figs/diff_pc_maps.pdf, id=757, 867.24pt x 433.62pt>
+<figs/diff_pc_maps.pdf, id=771, 867.24pt x 433.62pt>
 File: figs/diff_pc_maps.pdf Graphic file (type pdf)
 <use figs/diff_pc_maps.pdf>
-Package pdftex.def Info: figs/diff_pc_maps.pdf  used on input line 3127.
+Package pdftex.def Info: figs/diff_pc_maps.pdf  used on input line 3131.
 (pdftex.def)             Requested size: 368.74506pt x 184.37538pt.
-<figs/mt_plotDist.pdf, id=758, 578.16pt x 361.35pt>
+<figs/mt_plotDist.pdf, id=773, 578.16pt x 361.35pt>
 File: figs/mt_plotDist.pdf Graphic file (type pdf)
 <use figs/mt_plotDist.pdf>
-Package pdftex.def Info: figs/mt_plotDist.pdf  used on input line 3157.
+Package pdftex.def Info: figs/mt_plotDist.pdf  used on input line 3162.
 (pdftex.def)             Requested size: 204.85976pt x 128.03477pt.
 
 
 [42 <./figs/diff_pc_maps.pdf>]
-<figs/mrk_profiles.pdf, id=771, 578.16pt x 722.7pt>
+<figs/mrk_profiles.pdf, id=787, 578.16pt x 722.7pt>
 File: figs/mrk_profiles.pdf Graphic file (type pdf)
 <use figs/mrk_profiles.pdf>
-Package pdftex.def Info: figs/mrk_profiles.pdf  used on input line 3191.
+Package pdftex.def Info: figs/mrk_profiles.pdf  used on input line 3196.
 (pdftex.def)             Requested size: 409.71951pt x 512.15016pt.
 
 
 [43 <./figs/mt_plotDist.pdf>]
 
 [44 <./figs/mrk_profiles.pdf>]
-<figs/pRolocVis_screenshot.png, id=804, 1105.12875pt x 881.2925pt>
+<figs/pRolocVis_screenshot.png, id=819, 1105.12875pt x 881.2925pt>
 File: figs/pRolocVis_screenshot.png Graphic file (type png)
 <use figs/pRolocVis_screenshot.png>
-Package pdftex.def Info: figs/pRolocVis_screenshot.png  used on input line 3251.
+Package pdftex.def Info: figs/pRolocVis_screenshot.png  used on input line 3256.
 (pdftex.def)             Requested size: 327.77686pt x 261.37756pt.
 
 
 [45 <./figs/pRolocVis_screenshot.png>]
 
 [46]
-<figs/qsep_boxplots.pdf, id=820, 722.7pt x 433.62pt>
+<figs/qsep_boxplots.pdf, id=836, 722.7pt x 433.62pt>
 File: figs/qsep_boxplots.pdf Graphic file (type pdf)
 <use figs/qsep_boxplots.pdf>
-Package pdftex.def Info: figs/qsep_boxplots.pdf  used on input line 3423.
+Package pdftex.def Info: figs/qsep_boxplots.pdf  used on input line 3429.
 (pdftex.def)             Requested size: 409.71951pt x 245.82944pt.
 
 
 [47]
-<figs/qsep_levelplots_both.pdf, id=827, 994.07059pt x 420.77725pt>
+<figs/qsep_levelplots_both.pdf, id=843, 994.07059pt x 420.77725pt>
 File: figs/qsep_levelplots_both.pdf Graphic file (type pdf)
 <use figs/qsep_levelplots_both.pdf>
-Package pdftex.def Info: figs/qsep_levelplots_both.pdf  used on input line 3451.
+Package pdftex.def Info: figs/qsep_levelplots_both.pdf  used on input line 3457.
 (pdftex.def)             Requested size: 368.74506pt x 156.0832pt.
 
 
@@ -1551,42 +1546,42 @@ Package pdftex.def Info: figs/qsep_levelplots_both.pdf  used on input line 3451.
 [50]
 
 [51]
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 3789--3789
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 3795--3795
 []\T1/cmtt/m/it/9 ## sigma        0.0625       0.125        0.25         0.5           1           2[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 3789--3789
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 3795--3795
 []\T1/cmtt/m/it/9 ##   0.001 0.003065364 0.003065364 0.003065364 0.003065364 0.003065364 0.003065364[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 3789--3789
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 3795--3795
 []\T1/cmtt/m/it/9 ##   0.01  0.003065364 0.003065364 0.003065364 0.003065364 0.003065364 0.207445544[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 3789--3789
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 3795--3795
 []\T1/cmtt/m/it/9 ##   0.1   0.003065364 0.003065364 0.003065364 0.003065364 0.240067080 0.730830371[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 3789--3789
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 3795--3795
 []\T1/cmtt/m/it/9 ##   1     0.006526998 0.006526998 0.006526998 0.006526998 0.006526998 0.109311084[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 3789--3789
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 3795--3795
 []\T1/cmtt/m/it/9 ##   10    0.001385450 0.001385450 0.001385450 0.001385450 0.001385450 0.001385450[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 3789--3789
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 3795--3795
 []\T1/cmtt/m/it/9 ##   100   0.001385450 0.001385450 0.001385450 0.001385450 0.001385450 0.001385450[] 
  []
 
 
-Overfull \hbox (3.00816pt too wide) in paragraph at lines 3791--3794
+Overfull \hbox (3.00816pt too wide) in paragraph at lines 3797--3800
 []\T1/mdbch/m/n/9 To see which pairs of pa-ram-e-ters re-sulted in the high-est F1 score for each it-er-a-tion we can use the \T1/cmtt/m/it/9 getF1Scores
  []
 
@@ -1595,24 +1590,24 @@ Overfull \hbox (3.00816pt too wide) in paragraph at lines 3791--3794
 [52]
 
 [53]
-<figs/svm_score_boxplot.pdf, id=911, 722.7pt x 433.62pt>
+<figs/svm_score_boxplot.pdf, id=928, 722.7pt x 433.62pt>
 File: figs/svm_score_boxplot.pdf Graphic file (type pdf)
 <use figs/svm_score_boxplot.pdf>
-Package pdftex.def Info: figs/svm_score_boxplot.pdf  used on input line 3968.
+Package pdftex.def Info: figs/svm_score_boxplot.pdf  used on input line 3962.
 (pdftex.def)             Requested size: 245.8342pt x 147.50163pt.
 
 
 [54 <./figs/svm_score_boxplot.pdf>]
 
 [55]
-Overfull \hbox (8.49387pt too wide) in paragraph at lines 4096--4100
+Overfull \hbox (8.49387pt too wide) in paragraph at lines 4090--4094
 [] [] \T1/mdbch/b/n/9 Op-ti-mis-ing TAG-M-MAP model pa-ram-e-ters[] \T1/mdbch/m/n/9 The first step in us-ing TAGM-MAP is ex-e-cut-ing the \T1/cmtt/m/it/9 tagmMapTrain
  []
 
-<figs/log_post.pdf, id=934, 578.16pt x 361.35pt>
+<figs/log_post.pdf, id=951, 578.16pt x 361.35pt>
 File: figs/log_post.pdf Graphic file (type pdf)
 <use figs/log_post.pdf>
-Package pdftex.def Info: figs/log_post.pdf  used on input line 4130.
+Package pdftex.def Info: figs/log_post.pdf  used on input line 4124.
 (pdftex.def)             Requested size: 286.8024pt x 179.252pt.
 
 
@@ -1623,358 +1618,367 @@ Package pdftex.def Info: figs/log_post.pdf  used on input line 4130.
 [58]
 
 [59]
-<figs/tagm_mcmc_trace_dens.pdf, id=972, 505.89pt x 722.7pt>
+<figs/tagm_mcmc_trace_dens.pdf, id=989, 505.89pt x 722.7pt>
 File: figs/tagm_mcmc_trace_dens.pdf Graphic file (type pdf)
 <use figs/tagm_mcmc_trace_dens.pdf>
-Package pdftex.def Info: figs/tagm_mcmc_trace_dens.pdf  used on input line 4449.
+Package pdftex.def Info: figs/tagm_mcmc_trace_dens.pdf  used on input line 4443.
 (pdftex.def)             Requested size: 327.77686pt x 468.26071pt.
 
 
-[60]
-
-[61 <./figs/tagm_mcmc_trace_dens.pdf>]
-Overfull \hbox (10.59084pt too wide) in paragraph at lines 4551--4551
+[60 <./figs/tagm_mcmc_trace_dens.pdf>]
+Overfull \hbox (10.59084pt too wide) in paragraph at lines 4546--4546
 []\T1/cmtt/m/it/9 ## [37] "tagm.mcmc.probability.lowerquantile" "tagm.mcmc.probability.upperquantile"[] 
  []
 
 
 
-[62]
+[61]
 
-[63]
-<figs/multiloc_violin.pdf, id=1008, 433.62pt x 289.08pt>
+[62]
+<figs/multiloc_violin.pdf, id=1022, 433.62pt x 289.08pt>
 File: figs/multiloc_violin.pdf Graphic file (type pdf)
 <use figs/multiloc_violin.pdf>
-Package pdftex.def Info: figs/multiloc_violin.pdf  used on input line 4679.
+Package pdftex.def Info: figs/multiloc_violin.pdf  used on input line 4674.
 (pdftex.def)             Requested size: 286.8024pt x 191.21242pt.
-<figs/svm_pca.pdf, id=1009, 867.24pt x 433.62pt>
+<figs/svm_pca.pdf, id=1025, 867.24pt x 433.62pt>
 File: figs/svm_pca.pdf Graphic file (type pdf)
 <use figs/svm_pca.pdf>
-Package pdftex.def Info: figs/svm_pca.pdf  used on input line 4732.
+Package pdftex.def Info: figs/svm_pca.pdf  used on input line 4727.
 (pdftex.def)             Requested size: 368.74506pt x 184.37538pt.
 
 
-[64 <./figs/multiloc_violin.pdf>]
-<figs/svm_maps.pdf, id=1021, 722.7pt x 722.7pt>
+[63 <./figs/multiloc_violin.pdf>]
+<figs/svm_maps.pdf, id=1040, 722.7pt x 722.7pt>
 File: figs/svm_maps.pdf Graphic file (type pdf)
 <use figs/svm_maps.pdf>
-Package pdftex.def Info: figs/svm_maps.pdf  used on input line 4794.
+Package pdftex.def Info: figs/svm_maps.pdf  used on input line 4790.
 (pdftex.def)             Requested size: 409.71951pt x 409.71571pt.
 
 
-[65 <./figs/svm_pca.pdf>]
+[64 <./figs/svm_pca.pdf>]
 
-[66 <./figs/svm_maps.pdf>]
-<figs/screenshot_complexes_gui.jpg, id=1046, 2009.5075pt x 1055.945pt>
+[65 <./figs/svm_maps.pdf>]
+<figs/screenshot_complexes_gui.jpg, id=1066, 2009.5075pt x 1055.945pt>
 File: figs/screenshot_complexes_gui.jpg Graphic file (type jpg)
 <use figs/screenshot_complexes_gui.jpg>
-Package pdftex.def Info: figs/screenshot_complexes_gui.jpg  used on input line 4840.
+Package pdftex.def Info: figs/screenshot_complexes_gui.jpg  used on input line 4837.
 (pdftex.def)             Requested size: 409.71951pt x 215.29391pt.
-<figs/annotated_pca.pdf, id=1048, 578.16pt x 505.89pt>
+<figs/annotated_pca.pdf, id=1068, 578.16pt x 505.89pt>
 File: figs/annotated_pca.pdf Graphic file (type pdf)
 <use figs/annotated_pca.pdf>
-Package pdftex.def Info: figs/annotated_pca.pdf  used on input line 4889.
+Package pdftex.def Info: figs/annotated_pca.pdf  used on input line 4886.
 (pdftex.def)             Requested size: 286.8024pt x 250.9528pt.
 
 
-[67 <./figs/screenshot_complexes_gui.jpg>]
-<figs/annotated_pca2.pdf, id=1058, 578.16pt x 505.89pt>
+[66 <./figs/screenshot_complexes_gui.jpg>]
+<figs/annotated_pca2.pdf, id=1076, 578.16pt x 505.89pt>
 File: figs/annotated_pca2.pdf Graphic file (type pdf)
 <use figs/annotated_pca2.pdf>
-Package pdftex.def Info: figs/annotated_pca2.pdf  used on input line 4944.
+Package pdftex.def Info: figs/annotated_pca2.pdf  used on input line 4941.
 (pdftex.def)             Requested size: 286.8024pt x 250.9528pt.
 
 
-[68 <./figs/annotated_pca.pdf>]
+[67 <./figs/annotated_pca.pdf>]
 
-[69 <./figs/annotated_pca2.pdf>]
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 5033--5033
+[68 <./figs/annotated_pca2.pdf>]
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 5030--5030
 []\T1/cmtt/m/it/9 ##  [13] psms_rep1_unstim_norm: SummarizedExperiment with 78864 rows and 8 columns[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 5033--5033
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 5030--5030
 []\T1/cmtt/m/it/9 ##  [14] psms_rep2_unstim_norm: SummarizedExperiment with 90078 rows and 8 columns[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 5033--5033
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 5030--5030
 []\T1/cmtt/m/it/9 ##  [15] psms_rep3_unstim_norm: SummarizedExperiment with 80302 rows and 8 columns[] 
  []
 
 
-Overfull \hbox (20.7188pt too wide) in paragraph at lines 5033--5033
+Overfull \hbox (20.7188pt too wide) in paragraph at lines 5030--5030
 []\T1/cmtt/m/it/9 ##  [19] psms_rep1_unstim_imputed: SummarizedExperiment with 78864 rows and 8 columns[] 
  []
 
 
-Overfull \hbox (20.7188pt too wide) in paragraph at lines 5033--5033
+Overfull \hbox (20.7188pt too wide) in paragraph at lines 5030--5030
 []\T1/cmtt/m/it/9 ##  [20] psms_rep2_unstim_imputed: SummarizedExperiment with 90078 rows and 8 columns[] 
  []
 
 
-Overfull \hbox (20.7188pt too wide) in paragraph at lines 5033--5033
+Overfull \hbox (20.7188pt too wide) in paragraph at lines 5030--5030
 []\T1/cmtt/m/it/9 ##  [21] psms_rep3_unstim_imputed: SummarizedExperiment with 80302 rows and 8 columns[] 
  []
 
 
-Overfull \hbox (10.59084pt too wide) in paragraph at lines 5033--5033
+Overfull \hbox (10.59084pt too wide) in paragraph at lines 5030--5030
 []\T1/cmtt/m/it/9 ##  [22] psms_rep1_xray_imputed: SummarizedExperiment with 78794 rows and 8 columns[] 
  []
 
 
-Overfull \hbox (10.59084pt too wide) in paragraph at lines 5033--5033
+Overfull \hbox (10.59084pt too wide) in paragraph at lines 5030--5030
 []\T1/cmtt/m/it/9 ##  [23] psms_rep2_xray_imputed: SummarizedExperiment with 89910 rows and 8 columns[] 
  []
 
 
-Overfull \hbox (10.59084pt too wide) in paragraph at lines 5033--5033
+Overfull \hbox (10.59084pt too wide) in paragraph at lines 5030--5030
 []\T1/cmtt/m/it/9 ##  [24] psms_rep3_xray_imputed: SummarizedExperiment with 80099 rows and 8 columns[] 
  []
 
 
 
-[70]
+[69]
 
-[71]
-<figs/gp_plot.pdf, id=1113, 578.16pt x 867.24pt>
+[70]
+<figs/gp_plot.pdf, id=1132, 578.16pt x 867.24pt>
 File: figs/gp_plot.pdf Graphic file (type pdf)
 <use figs/gp_plot.pdf>
-Package pdftex.def Info: figs/gp_plot.pdf  used on input line 5216.
+Package pdftex.def Info: figs/gp_plot.pdf  used on input line 5213.
 (pdftex.def)             Requested size: 368.74506pt x 553.11293pt.
 
 
-[72]
+[71]
 
-[73 <./figs/gp_plot.pdf>]
-<figs/bandle_prior_hist.pdf, id=1135, 433.62pt x 289.08pt>
+[72 <./figs/gp_plot.pdf>]
+<figs/bandle_prior_hist.pdf, id=1154, 433.62pt x 289.08pt>
 File: figs/bandle_prior_hist.pdf Graphic file (type pdf)
 <use figs/bandle_prior_hist.pdf>
-Package pdftex.def Info: figs/bandle_prior_hist.pdf  used on input line 5269.
+Package pdftex.def Info: figs/bandle_prior_hist.pdf  used on input line 5266.
 (pdftex.def)             Requested size: 327.77686pt x 218.52974pt.
 
 
-[74 <./figs/bandle_prior_hist.pdf>]
+[73 <./figs/bandle_prior_hist.pdf>]
 
-[75]
-<figs/bandle_outliers.pdf, id=1157, 722.7pt x 867.24pt>
+[74]
+<figs/bandle_outliers.pdf, id=1177, 722.7pt x 867.24pt>
 File: figs/bandle_outliers.pdf Graphic file (type pdf)
 <use figs/bandle_outliers.pdf>
-Package pdftex.def Info: figs/bandle_outliers.pdf  used on input line 5404.
+Package pdftex.def Info: figs/bandle_outliers.pdf  used on input line 5401.
 (pdftex.def)             Requested size: 389.23228pt x 467.0852pt.
 
 
-[76 <./figs/bandle_outliers.pdf>]
+[75 <./figs/bandle_outliers.pdf>]
 
-[77]
-LaTeX Font Info:    Trying to load font information for TS1+mdbch on input line 5568.
+[76]
+LaTeX Font Info:    Trying to load font information for TS1+mdbch on input line 5565.
 (/Users/User/Library/TinyTeX/texmf-dist/tex/latex/mathdesign/mdbch/ts1mdbch.fd
 File: ts1mdbch.fd 2013/08/29 Fontinst v1.933 font definitions for TS1/mdbch.
 )
 LaTeX Font Info:    Font shape `TS1/mdbch/m/n' will be
-(Font)              scaled to size 8.64006pt on input line 5568.
+(Font)              scaled to size 8.64006pt on input line 5565.
 
+
+[77]
 
 [78]
-
-[79]
-<figs/bandle_classifications.pdf, id=1185, 722.7pt x 433.62pt>
+<figs/bandle_classifications.pdf, id=1204, 722.7pt x 433.62pt>
 File: figs/bandle_classifications.pdf Graphic file (type pdf)
 <use figs/bandle_classifications.pdf>
-Package pdftex.def Info: figs/bandle_classifications.pdf  used on input line 5771.
+Package pdftex.def Info: figs/bandle_classifications.pdf  used on input line 5768.
 (pdftex.def)             Requested size: 368.74506pt x 221.24913pt.
 
 
-[80]
-<figs/bandle_posteriors.pdf, id=1192, 722.7pt x 433.62pt>
+[79]
+<figs/bandle_posteriors.pdf, id=1212, 722.7pt x 433.62pt>
 File: figs/bandle_posteriors.pdf Graphic file (type pdf)
 <use figs/bandle_posteriors.pdf>
-Package pdftex.def Info: figs/bandle_posteriors.pdf  used on input line 5817.
+Package pdftex.def Info: figs/bandle_posteriors.pdf  used on input line 5814.
 (pdftex.def)             Requested size: 368.74506pt x 221.24913pt.
 
 
-[81 <./figs/bandle_classifications.pdf>]
-<figs/bandle_prediction_maps.pdf, id=1206, 578.16pt x 1084.05pt>
+[80 <./figs/bandle_classifications.pdf>]
+<figs/bandle_prediction_maps.pdf, id=1228, 578.16pt x 1084.05pt>
 File: figs/bandle_prediction_maps.pdf Graphic file (type pdf)
 <use figs/bandle_prediction_maps.pdf>
-Package pdftex.def Info: figs/bandle_prediction_maps.pdf  used on input line 5858.
+Package pdftex.def Info: figs/bandle_prediction_maps.pdf  used on input line 5857.
 (pdftex.def)             Requested size: 327.77686pt x 614.5736pt.
 
 
-[82 <./figs/bandle_posteriors.pdf>]
+[81 <./figs/bandle_posteriors.pdf>]
 
-[83 <./figs/bandle_prediction_maps.pdf>]
-<figs/unstim_unknown_violins.pdf, id=1234, 867.24pt x 867.24pt>
+[82 <./figs/bandle_prediction_maps.pdf>]
+<figs/unstim_unknown_violins.pdf, id=1255, 867.24pt x 867.24pt>
 File: figs/unstim_unknown_violins.pdf Graphic file (type pdf)
 <use figs/unstim_unknown_violins.pdf>
-Package pdftex.def Info: figs/unstim_unknown_violins.pdf  used on input line 5932.
+Package pdftex.def Info: figs/unstim_unknown_violins.pdf  used on input line 5931.
 (pdftex.def)             Requested size: 409.71951pt x 409.72014pt.
 
 
-[84]
-<figs/xray_unknown_violins.pdf, id=1242, 867.24pt x 867.24pt>
+[83]
+<figs/xray_unknown_violins.pdf, id=1263, 867.24pt x 867.24pt>
 File: figs/xray_unknown_violins.pdf Graphic file (type pdf)
 <use figs/xray_unknown_violins.pdf>
-Package pdftex.def Info: figs/xray_unknown_violins.pdf  used on input line 5950.
+Package pdftex.def Info: figs/xray_unknown_violins.pdf  used on input line 5949.
 (pdftex.def)             Requested size: 409.71951pt x 409.72014pt.
 
 
-[85 <./figs/unstim_unknown_violins.pdf>]
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+[84 <./figs/unstim_unknown_violins.pdf>]
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ##               chromatin       cytosol            ER         ERGIC            GA[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ## A0A0U1RRE5 2.711979e-65  9.196591e-42 2.049920e-239 8.798116e-241 6.662549e-138[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ## A0AV96     1.629262e-56 1.343584e-137 1.105275e-116  2.987566e-51  4.716413e-67[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ## A0AVF1     5.380888e-66 2.840017e-100 2.439553e-212 2.355519e-201 1.498431e-119[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ## A0FGR8     5.775737e-77 3.214817e-131  2.279897e-17  2.636580e-01  1.295475e-32[] 
  []
 
 
 
-[86 <./figs/xray_unknown_violins.pdf>]
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+[85 <./figs/xray_unknown_violins.pdf>]
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ## A0PJW6     6.779739e-45 6.950206e-215 6.916067e-285  0.000000e+00  4.191143e-84[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ## A1A4S6     2.352237e-49 7.327521e-110 9.709287e-134 3.467977e-138  1.479035e-41[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ##                 lysosome mitochondrion      nucleus    peroxisome            PM[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ## A0A0U1RRE5 2.531300e-314  0.000000e+00 1.000000e+00  0.000000e+00 8.073240e-175[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ## A0AV96     6.864402e-207 3.445242e-263 1.000000e+00  0.000000e+00  1.533369e-61[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ## A0AVF1     4.463920e-288 1.158345e-317 7.603868e-01  0.000000e+00 3.745508e-149[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ## A0FGR8      2.507399e-87 1.342191e-220 2.092688e-30 1.497077e-150  7.363420e-01[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ## A0PJW6     6.434494e-207  1.000000e+00 3.026051e-61  0.000000e+00 3.823400e-266[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6005--6005
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6004--6004
 []\T1/cmtt/m/it/9 ## A1A4S6     7.727091e-185 5.788136e-179 1.000000e+00  0.000000e+00  2.493783e-83[] 
  []
 
-<figs/cond1_unass_post.pdf, id=1265, 505.89pt x 505.89pt>
+<figs/cond1_unass_post.pdf, id=1286, 505.89pt x 505.89pt>
 File: figs/cond1_unass_post.pdf Graphic file (type pdf)
 <use figs/cond1_unass_post.pdf>
-Package pdftex.def Info: figs/cond1_unass_post.pdf  used on input line 6028.
+Package pdftex.def Info: figs/cond1_unass_post.pdf  used on input line 6027.
 (pdftex.def)             Requested size: 327.77686pt x 327.78249pt.
-<figs/cond2_unass_post.pdf, id=1266, 505.89pt x 505.89pt>
+<figs/cond2_unass_post.pdf, id=1287, 505.89pt x 505.89pt>
 File: figs/cond2_unass_post.pdf Graphic file (type pdf)
 <use figs/cond2_unass_post.pdf>
-Package pdftex.def Info: figs/cond2_unass_post.pdf  used on input line 6036.
+Package pdftex.def Info: figs/cond2_unass_post.pdf  used on input line 6035.
 (pdftex.def)             Requested size: 327.77686pt x 327.78249pt.
 
 
-[87 <./figs/cond1_unass_post.pdf>]
-Overfull \hbox (38.88356pt too wide) in paragraph at lines 6069--6071
+[86 <./figs/cond1_unass_post.pdf>]
+Overfull \hbox (38.88356pt too wide) in paragraph at lines 6068--6070
 []\T1/mdbch/m/n/9 To ob-tain the dif-fer-en-tial lo-cal-i-sa-tion prob-a-bil-ity from a \T1/cmtt/m/it/9 bandleParams \T1/mdbch/m/n/9 ob-ject we can use the \T1/cmtt/m/it/9 diffLocalisationProb
  []
 
 
 
-[88 <./figs/cond2_unass_post.pdf>]
-<figs/bandle_dl_prob_rank.pdf, id=1292, 433.62pt x 289.08pt>
+[87 <./figs/cond2_unass_post.pdf>]
+<figs/bandle_dl_prob_rank.pdf, id=1313, 433.62pt x 289.08pt>
 File: figs/bandle_dl_prob_rank.pdf Graphic file (type pdf)
 <use figs/bandle_dl_prob_rank.pdf>
-Package pdftex.def Info: figs/bandle_dl_prob_rank.pdf  used on input line 6102.
+Package pdftex.def Info: figs/bandle_dl_prob_rank.pdf  used on input line 6101.
 (pdftex.def)             Requested size: 327.77686pt x 218.52974pt.
 
 
-[89 <./figs/bandle_dl_prob_rank.pdf>]
-Overfull \hbox (12.98572pt too wide) in paragraph at lines 6175--6182
+[88 <./figs/bandle_dl_prob_rank.pdf>]
+Overfull \hbox (12.98572pt too wide) in paragraph at lines 6174--6181
 \T1/mdbch/m/n/9 lar lo-cal-i-sa-tions, here \T1/cmtt/m/it/9 bandle.allocation.pred\T1/mdbch/m/n/9 . The de-fault plot that is gen-er-ated by \T1/cmtt/m/it/9 plotTranslocations
  []
 
-<figs/alluvial_plot.pdf, id=1306, 505.89pt x 505.89pt>
+<figs/alluvial_plot.pdf, id=1327, 505.89pt x 505.89pt>
 File: figs/alluvial_plot.pdf Graphic file (type pdf)
 <use figs/alluvial_plot.pdf>
-Package pdftex.def Info: figs/alluvial_plot.pdf  used on input line 6199.
+Package pdftex.def Info: figs/alluvial_plot.pdf  used on input line 6198.
 (pdftex.def)             Requested size: 286.8024pt x 286.80872pt.
 
 
-[90 <./figs/alluvial_plot.pdf>]
-<figs/circo_plot.pdf, id=1323, 505.89pt x 505.89pt>
+[89 <./figs/alluvial_plot.pdf>]
+<figs/circo_plot.pdf, id=1345, 505.89pt x 505.89pt>
 File: figs/circo_plot.pdf Graphic file (type pdf)
 <use figs/circo_plot.pdf>
-Package pdftex.def Info: figs/circo_plot.pdf  used on input line 6222.
+Package pdftex.def Info: figs/circo_plot.pdf  used on input line 6221.
 (pdftex.def)             Requested size: 286.8024pt x 286.80872pt.
 
 
-[91 <./figs/circo_plot.pdf>]
+[90 <./figs/circo_plot.pdf>]
+
+[91]
 
 [92]
-
-[93]
-Overfull \hbox (61.23064pt too wide) in paragraph at lines 6536--6536
+Overfull \hbox (61.23064pt too wide) in paragraph at lines 6535--6535
 []\T1/cmtt/m/it/9 ## BLAS:   /Library/Frameworks/R.framework/Versions/4.5-x86_64/Resources/lib/libRblas.0.dylib[] 
  []
 
 
-Overfull \hbox (182.76616pt too wide) in paragraph at lines 6536--6536
+Overfull \hbox (182.76616pt too wide) in paragraph at lines 6535--6535
 []\T1/cmtt/m/it/9 ## LAPACK: /Library/Frameworks/R.framework/Versions/4.5-x86_64/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.1[] 
  []
 
 
-Overfull \hbox (0.46288pt too wide) in paragraph at lines 6536--6536
+Overfull \hbox (0.46288pt too wide) in paragraph at lines 6535--6535
 []\T1/cmtt/m/it/9 ##  [25] ggfun_0.1.8              survival_3.8-3           MetaboCoreUtils_1.16.0[] 
  []
 
 
-Overfull \hbox (5.52686pt too wide) in paragraph at lines 6536--6536
+Overfull \hbox (5.52686pt too wide) in paragraph at lines 6535--6535
 []\T1/cmtt/m/it/9 ##  [52] shinyhelper_0.3.2        randomForest_4.7-1.2     GenomeInfoDbData_1.2.14[] 
  []
 
 
 
-[94]
+[93]
+Overfull \hbox (109.82426pt too wide) in paragraph at lines 6552--6558
+[]\T1/mdbch/m/n/9 doi:10.5281/zenodo.15100485[] [[]] and the as-so-ci-ated GitHub repos-i-tory []$\T1/cmtt/m/it/9 https : / / github . com / CambridgeCentreForProteomics /
+ []
 
-[95]
+
+
+[94]
+Overfull \hbox (29.93765pt too wide) in paragraph at lines 6565--6570
+[]\T1/mdbch/m/n/9 Source code avail-able from: []$\T1/cmtt/m/it/9 https : / / github . com / CambridgeCentreForProteomics / f1000 _ subcellular _
+ []
+
 LaTeX Font Info:    Font shape `T1/mdbch/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 6565.
+(Font)              scaled to size 7.68005pt on input line 6582.
 (./Subcellular_proteomics_workflow.bbl
 LaTeX Font Info:    Font shape `T1/mdbch/m/it' will be
 (Font)              scaled to size 7.68005pt on input line 11.
 LaTeX Font Info:    Font shape `T1/cmtt/m/n' will be
 (Font)              scaled to size 8.57605pt on input line 13.
 
+
+[95]
 
 [96]
 
@@ -1991,21 +1995,21 @@ L3 programming layer <2025-04-29>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `Subcellular_proteomics_workflow.out' has not changed.
-(rerunfilecheck)             Checksum: 249194A425FE0831C5239203F407AC0B;16443.
+(rerunfilecheck)             Checksum: 220CDD1081626354EEAB728671569BFD;16743.
  ) 
 Here is how much of TeX's memory you used:
- 29371 strings out of 471528
- 542857 string characters out of 5518826
- 925923 words of memory out of 5000000
- 55101 multiletter control sequences out of 15000+600000
+ 29381 strings out of 471528
+ 543010 string characters out of 5518826
+ 926053 words of memory out of 5000000
+ 55108 multiletter control sequences out of 15000+600000
  697895 words of font info for 151 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 114i,15n,131p,916b,703s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 114i,15n,131p,916b,729s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </Users/User/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0800.643pk> </Users/User/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/tctt0900.600pk> </Users/User/Library/TinyTeX/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt0900.643pk></Users/User/Library/TinyTeX/texmf-dist/fonts/type1/bitstrea/charter/bchb8a.pfb></Users/User/Library/TinyTeX/texmf-dist/fonts/type1/bitstrea/charter/bchr8a.pfb></Users/User/Library/TinyTeX/texmf-dist/fonts/type1/bitstrea/charter/bchri8a.pfb></Users/User/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></Users/User/Library/TinyTeX/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chb8t.pfb></Users/User/Library/TinyTeX/texmf-dist/fonts/type1/public/mathdesign/mdbch/md-chr8t.pfb></Users/User/Library/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></Users/User/Library/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on Subcellular_proteomics_workflow.pdf (98 pages, 16990435 bytes).
+Output written on Subcellular_proteomics_workflow.pdf (98 pages, 16993060 bytes).
 PDF statistics:
- 1714 PDF objects out of 1728 (max. 8388607)
- 1355 compressed objects within 14 object streams
- 304 named destinations out of 1000 (max. 500000)
- 759 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1751 PDF objects out of 2073 (max. 8388607)
+ 1392 compressed objects within 14 object streams
+ 307 named destinations out of 1000 (max. 500000)
+ 775 words of extra memory for PDF output out of 10000 (max. 10000000)
 

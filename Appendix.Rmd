@@ -16,7 +16,11 @@ correlation profiling subcellular proteomics" by Hutchings et al., submitted to
 F1000Research in May 2025. Associated data can be found on Zenodo at [doi:10.5281/zenodo.15100485](http://doi.org/10.5281/zenodo.15100485)
 and also in the corresponding [Github repository](https://github.com/CambridgeCentreForProteomics/f1000_subcellular_proteomics). 
 
-```{r loadenv, message = FALSE, warning = FALSE, include = FALSE}
+We advise users to load all packages used in the main workflow. Some additional
+packages are also required for certain sections of this Appendix, such as the `readxl`
+package.
+
+```{r loadenv, message = FALSE, warning = FALSE}
 library("QFeatures")
 library("tidyverse")
 library("pRoloc")

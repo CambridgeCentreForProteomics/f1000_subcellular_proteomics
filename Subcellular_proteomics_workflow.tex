@@ -153,7 +153,7 @@ LOPIT, QFeatures, pRoloc, bandle
 \clearpage
 \pagestyle{main}
 
-\textbf{R version}: R version 4.5.0 (2025-04-11)
+\textbf{R version}: R version 4.5.0 alpha (2025-03-15 r87984)
 
 \textbf{Bioconductor version}: 3.21
 
@@ -1608,7 +1608,7 @@ We can examine the MVs and see if there is any pattern(s).
       \FunctionTok{geom\_col}\NormalTok{() }\SpecialCharTok{+} 
       \FunctionTok{ylim}\NormalTok{(}\FunctionTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{, }\DecValTok{100}\NormalTok{)) }\SpecialCharTok{+} 
       \FunctionTok{labs}\NormalTok{(}\AttributeTok{x =} \StringTok{"Fraction"}\NormalTok{, }\AttributeTok{y =} \StringTok{"Missing values (\%)"}\NormalTok{) }\SpecialCharTok{+}
-      \FunctionTok{ggtitle}\NormalTok{(names[i]))}
+      \FunctionTok{ggtitle}\NormalTok{(}\FunctionTok{names}\NormalTok{(qf)[ind]))}
 \NormalTok{\}}
 \end{Highlighting}
 \end{Shaded}
@@ -2204,7 +2204,7 @@ localisastion using the control unstimulated condition, we here coerce our
 ## experimentData: use 'experimentData(object)'
 ## Annotation:  
 ## - - - Processing information - - -
-##  MSnbase version: 2.34.0
+##  MSnbase version: 2.33.4
 \end{verbatim}
 
 As a reminder for readers, the structure of an \texttt{MSnSet} object is very similar to
@@ -4002,11 +4002,11 @@ demonstrate the use of a 0.75 quantile threshold.
 
 \begin{verbatim}
 ##          chromatin            cytosol                 ER              ERGIC 
-##          0.8487237          0.9747272          0.9485831          0.5383051 
+##          0.8487240          0.9747211          0.9485828          0.5382950 
 ##                 GA           lysosome      mitochondrion            nucleus 
-##          0.7114958          0.8473250          0.9848005          0.9070867 
+##          0.7115057          0.8473222          0.9848009          0.9070875 
 ##         peroxisome                 PM         proteasome ribosome/complexes 
-##          0.7255786          0.8351724          0.6288318          0.8128717
+##          0.7255788          0.8351760          0.6288350          0.8128715
 \end{verbatim}
 
 We can now use these quantile-based score thresholds in the \texttt{getPredictions}
@@ -4994,39 +4994,38 @@ We can use the \texttt{experiments} command to view all our data stored in the
 \end{Shaded}
 
 \begin{verbatim}
-## ExperimentList class object of length 32:
-##  [1] psms_raw_rep1: SummarizedExperiment with 115302 rows and 16 columns
-##  [2] psms_raw_rep2: SummarizedExperiment with 135169 rows and 16 columns
-##  [3] psms_raw_rep3: SummarizedExperiment with 120343 rows and 16 columns
-##  [4] psms_filtered_rep1: SummarizedExperiment with 79117 rows and 16 columns
-##  [5] psms_filtered_rep2: SummarizedExperiment with 90226 rows and 16 columns
-##  [6] psms_filtered_rep3: SummarizedExperiment with 80446 rows and 16 columns
-##  [7] psms_rep1_unstim: SummarizedExperiment with 78864 rows and 8 columns
+## ExperimentList class object of length 31:
+##  [1] psms_raw: SummarizedExperiment with 370814 rows and 16 columns
+##  [2] psms_filtered: SummarizedExperiment with 249789 rows and 16 columns
+##  [3] psms_rep1: SummarizedExperiment with 79117 rows and 16 columns
+##  [4] psms_rep2: SummarizedExperiment with 90226 rows and 16 columns
+##  [5] psms_rep3: SummarizedExperiment with 80446 rows and 16 columns
+##  [6] psms_rep1_unstim: SummarizedExperiment with 78864 rows and 8 columns
+##  [7] psms_rep1_xray: SummarizedExperiment with 78794 rows and 8 columns
 ##  [8] psms_rep2_unstim: SummarizedExperiment with 90078 rows and 8 columns
-##  [9] psms_rep3_unstim: SummarizedExperiment with 80302 rows and 8 columns
-##  [10] psms_rep1_xray: SummarizedExperiment with 78794 rows and 8 columns
-##  [11] psms_rep2_xray: SummarizedExperiment with 89910 rows and 8 columns
-##  [12] psms_rep3_xray: SummarizedExperiment with 80099 rows and 8 columns
-##  [13] psms_rep1_unstim_norm: SummarizedExperiment with 78864 rows and 8 columns
+##  [9] psms_rep2_xray: SummarizedExperiment with 89910 rows and 8 columns
+##  [10] psms_rep3_unstim: SummarizedExperiment with 80302 rows and 8 columns
+##  [11] psms_rep3_xray: SummarizedExperiment with 80099 rows and 8 columns
+##  [12] psms_rep1_unstim_norm: SummarizedExperiment with 78864 rows and 8 columns
+##  [13] psms_rep1_xray_norm: SummarizedExperiment with 78794 rows and 8 columns
 ##  [14] psms_rep2_unstim_norm: SummarizedExperiment with 90078 rows and 8 columns
-##  [15] psms_rep3_unstim_norm: SummarizedExperiment with 80302 rows and 8 columns
-##  [16] psms_rep1_xray_norm: SummarizedExperiment with 78794 rows and 8 columns
-##  [17] psms_rep2_xray_norm: SummarizedExperiment with 89910 rows and 8 columns
-##  [18] psms_rep3_xray_norm: SummarizedExperiment with 80099 rows and 8 columns
-##  [19] psms_rep1_unstim_imputed: SummarizedExperiment with 78864 rows and 8 columns
+##  [15] psms_rep2_xray_norm: SummarizedExperiment with 89910 rows and 8 columns
+##  [16] psms_rep3_unstim_norm: SummarizedExperiment with 80302 rows and 8 columns
+##  [17] psms_rep3_xray_norm: SummarizedExperiment with 80099 rows and 8 columns
+##  [18] psms_rep1_unstim_imputed: SummarizedExperiment with 78864 rows and 8 columns
+##  [19] psms_rep1_xray_imputed: SummarizedExperiment with 78794 rows and 8 columns
 ##  [20] psms_rep2_unstim_imputed: SummarizedExperiment with 90078 rows and 8 columns
-##  [21] psms_rep3_unstim_imputed: SummarizedExperiment with 80302 rows and 8 columns
-##  [22] psms_rep1_xray_imputed: SummarizedExperiment with 78794 rows and 8 columns
-##  [23] psms_rep2_xray_imputed: SummarizedExperiment with 89910 rows and 8 columns
-##  [24] psms_rep3_xray_imputed: SummarizedExperiment with 80099 rows and 8 columns
-##  [25] prots_rep1_unstim: SummarizedExperiment with 6446 rows and 8 columns
+##  [21] psms_rep2_xray_imputed: SummarizedExperiment with 89910 rows and 8 columns
+##  [22] psms_rep3_unstim_imputed: SummarizedExperiment with 80302 rows and 8 columns
+##  [23] psms_rep3_xray_imputed: SummarizedExperiment with 80099 rows and 8 columns
+##  [24] prots_rep1_unstim: SummarizedExperiment with 6446 rows and 8 columns
+##  [25] prots_rep1_xray: SummarizedExperiment with 6446 rows and 8 columns
 ##  [26] prots_rep2_unstim: SummarizedExperiment with 6689 rows and 8 columns
-##  [27] prots_rep3_unstim: SummarizedExperiment with 6375 rows and 8 columns
-##  [28] prots_rep1_xray: SummarizedExperiment with 6446 rows and 8 columns
-##  [29] prots_rep2_xray: SummarizedExperiment with 6689 rows and 8 columns
-##  [30] prots_rep3_xray: SummarizedExperiment with 6374 rows and 8 columns
-##  [31] prots_unstim: SummarizedExperiment with 5701 rows and 24 columns
-##  [32] prots_xray: SummarizedExperiment with 5700 rows and 24 columns
+##  [27] prots_rep2_xray: SummarizedExperiment with 6689 rows and 8 columns
+##  [28] prots_rep3_unstim: SummarizedExperiment with 6375 rows and 8 columns
+##  [29] prots_rep3_xray: SummarizedExperiment with 6374 rows and 8 columns
+##  [30] prots_unstim: SummarizedExperiment with 5701 rows and 24 columns
+##  [31] prots_xray: SummarizedExperiment with 5700 rows and 24 columns
 \end{verbatim}
 
 In the next code chunk we extract the individual replicates into \texttt{MSnSet}
@@ -6422,13 +6421,13 @@ avoid such errors.
 \end{Shaded}
 
 \begin{verbatim}
-## R version 4.5.0 (2025-04-11)
-## Platform: x86_64-apple-darwin20
+## R version 4.5.0 alpha (2025-03-15 r87984)
+## Platform: aarch64-apple-darwin20
 ## Running under: macOS Sequoia 15.5
 ## 
 ## Matrix products: default
-## BLAS:   /Library/Frameworks/R.framework/Versions/4.5-x86_64/Resources/lib/libRblas.0.dylib 
-## LAPACK: /Library/Frameworks/R.framework/Versions/4.5-x86_64/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.1
+## BLAS:   /Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/lib/libRblas.0.dylib 
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.5-arm64/Resources/lib/libRlapack.dylib;  LAPACK version 3.12.1
 ## 
 ## locale:
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
@@ -6441,97 +6440,97 @@ avoid such errors.
 ## [8] base     
 ## 
 ## other attached packages:
-##  [1] pheatmap_1.0.12             ggpubr_0.6.0               
-##  [3] gridExtra_2.3               pRolocdata_1.46.0          
-##  [5] pRolocGUI_2.18.0            org.Hs.eg.db_3.21.0        
-##  [7] clusterProfiler_4.16.0      dbscan_1.2.2               
-##  [9] lubridate_1.9.4             forcats_1.0.0              
-## [11] stringr_1.5.1               dplyr_1.1.4                
-## [13] purrr_1.0.4                 readr_2.1.5                
-## [15] tidyr_1.3.1                 tibble_3.2.1               
-## [17] ggplot2_3.5.2               tidyverse_2.0.0            
-## [19] bandle_1.12.0               pRoloc_1.48.0              
-## [21] BiocParallel_1.42.0         MLInterfaces_1.88.1        
-## [23] cluster_2.1.8.1             annotate_1.86.0            
-## [25] XML_3.99-0.18               AnnotationDbi_1.70.0       
-## [27] MSnbase_2.34.0              ProtGenerics_1.40.0        
-## [29] mzR_2.42.0                  Rcpp_1.0.14                
-## [31] QFeatures_1.18.0            MultiAssayExperiment_1.34.0
-## [33] SummarizedExperiment_1.38.1 Biobase_2.68.0             
-## [35] GenomicRanges_1.60.0        GenomeInfoDb_1.44.0        
-## [37] IRanges_2.42.0              S4Vectors_0.46.0           
-## [39] BiocGenerics_0.54.0         generics_0.1.4             
-## [41] MatrixGenerics_1.20.0       matrixStats_1.5.0          
+##  [1] pheatmap_1.0.12              ggpubr_0.6.0                
+##  [3] gridExtra_2.3                pRolocdata_1.45.1           
+##  [5] pRolocGUI_2.17.0             org.Hs.eg.db_3.21.0         
+##  [7] clusterProfiler_4.15.1       dbscan_1.2.2                
+##  [9] lubridate_1.9.4              forcats_1.0.0               
+## [11] stringr_1.5.1                dplyr_1.1.4                 
+## [13] purrr_1.0.4                  readr_2.1.5                 
+## [15] tidyr_1.3.1                  tibble_3.2.1                
+## [17] ggplot2_3.5.2                tidyverse_2.0.0             
+## [19] bandle_1.11.2                pRoloc_1.47.5               
+## [21] BiocParallel_1.41.5          MLInterfaces_1.87.0         
+## [23] cluster_2.1.8.1              annotate_1.85.0             
+## [25] XML_3.99-0.18                AnnotationDbi_1.69.1        
+## [27] MSnbase_2.33.4               ProtGenerics_1.39.2         
+## [29] mzR_2.41.4                   Rcpp_1.0.14                 
+## [31] QFeatures_1.17.5             MultiAssayExperiment_1.33.10
+## [33] SummarizedExperiment_1.37.0  Biobase_2.67.0              
+## [35] GenomicRanges_1.59.1         GenomeInfoDb_1.43.4         
+## [37] IRanges_2.41.3               S4Vectors_0.45.4            
+## [39] BiocGenerics_0.53.6          generics_0.1.3              
+## [41] MatrixGenerics_1.19.1        matrixStats_1.5.0           
 ## 
 ## loaded via a namespace (and not attached):
 ##   [1] R.methodsS3_1.8.2        shinydashboardPlus_2.0.5 progress_1.2.3          
-##   [4] vsn_3.76.0               nnet_7.3-20              DT_0.33                 
-##   [7] Biostrings_2.76.0        vctrs_0.6.5              ggtangle_0.0.6          
+##   [4] vsn_3.75.0               nnet_7.3-20              DT_0.33                 
+##   [7] Biostrings_2.75.4        vctrs_0.6.5              ggtangle_0.0.6          
 ##  [10] digest_0.6.37            png_0.1-8                shape_1.4.6.1           
-##  [13] proxy_0.4-27             BiocBaseUtils_1.10.0     git2r_0.36.2            
-##  [16] ggrepel_0.9.6            parallelly_1.44.0        MASS_7.3-65             
-##  [19] reshape2_1.4.4           foreach_1.5.2            httpuv_1.6.16           
-##  [22] qvalue_2.40.0            withr_3.0.2              xfun_0.52               
-##  [25] ggfun_0.1.8              survival_3.8-3           MetaboCoreUtils_1.16.0  
-##  [28] memoise_2.0.1            hexbin_1.28.5            gson_0.1.0              
-##  [31] systemfonts_1.2.3        mixtools_2.0.0.1         ragg_1.4.0              
-##  [34] tidytree_0.4.6           GlobalOptions_0.1.2      gtools_3.9.5            
-##  [37] R.oo_1.27.1              Formula_1.2-5            prettyunits_1.2.0       
-##  [40] KEGGREST_1.48.0          promises_1.3.2           httr_1.4.7              
-##  [43] rstatix_0.7.2            globals_0.18.0           rstudioapi_0.17.1       
-##  [46] UCSC.utils_1.4.0         miniUI_0.1.2             DOSE_4.2.0              
-##  [49] ggalluvial_0.12.5        curl_6.2.2               ncdf4_1.24              
-##  [52] shinyhelper_0.3.2        randomForest_4.7-1.2     GenomeInfoDbData_1.2.14 
-##  [55] SparseArray_1.8.0        xtable_1.8-4             doParallel_1.0.17       
-##  [58] evaluate_1.0.3           S4Arrays_1.8.0           BiocFileCache_2.16.0    
-##  [61] preprocessCore_1.70.0    hms_1.1.3                bookdown_0.43           
-##  [64] colorspace_2.1-1         filelock_1.0.3           shinyWidgets_0.9.0      
-##  [67] magrittr_2.0.3           later_1.4.2              viridis_0.6.5           
-##  [70] ggtree_3.16.0            lattice_0.22-7           MsCoreUtils_1.20.0      
-##  [73] future.apply_1.11.3      cowplot_1.1.3            class_7.3-23            
-##  [76] pillar_1.10.2            nlme_3.1-168             iterators_1.0.14        
-##  [79] compiler_4.5.0           stringi_1.8.7            gower_1.0.2             
-##  [82] dendextend_1.19.0        plyr_1.8.9               crayon_1.5.3            
-##  [85] abind_1.4-8              gridGraphics_0.5-1       bit_4.6.0               
-##  [88] pcaMethods_2.0.0         fastmatch_1.1-6          textshaping_1.0.1       
-##  [91] codetools_0.2-20         recipes_1.3.0            bslib_0.9.0             
-##  [94] e1071_1.7-16             plotly_4.10.4            LaplacesDemon_16.1.6    
-##  [97] mime_0.13                splines_4.5.0            circlize_0.4.16         
-## [100] dbplyr_2.5.0             knitr_1.50               blob_1.2.4              
-## [103] clue_0.3-66              AnnotationFilter_1.32.0  fs_1.6.6                
-## [106] listenv_0.9.1            mzID_1.46.0              ggsignif_0.6.4          
-## [109] ggplotify_0.1.2          Matrix_1.7-3             statmod_1.5.0           
-## [112] svglite_2.2.1            tzdb_0.5.0               lpSolve_5.6.23          
-## [115] pkgconfig_2.0.3          tools_4.5.0              cachem_1.1.0            
-## [118] RSQLite_2.3.11           viridisLite_0.4.2        DBI_1.2.3               
-## [121] impute_1.82.0            fastmap_1.2.0            rmarkdown_2.29          
-## [124] scales_1.4.0             grid_4.5.0               usethis_3.1.0           
-## [127] shinydashboard_0.7.3     broom_1.0.8              sass_0.4.10             
-## [130] patchwork_1.3.0          coda_0.19-4.1            FNN_1.1.4.1             
-## [133] BiocManager_1.30.25      carData_3.0-5            lbfgs_1.2.1.2           
-## [136] rpart_4.1.24             farver_2.1.2             yaml_2.3.10             
-## [139] cli_3.6.5                lifecycle_1.0.4          caret_7.0-1             
-## [142] mvtnorm_1.3-3            backports_1.5.0          lava_1.8.1              
-## [145] kernlab_0.9-33           timechange_0.3.0         gtable_0.3.6            
-## [148] parallel_4.5.0           pROC_1.18.5              ape_5.8-1               
-## [151] limma_3.64.0             jsonlite_2.0.0           colourpicker_1.3.0      
-## [154] kableExtra_1.4.0         bit64_4.6.0-1            Rtsne_0.17              
-## [157] yulab.utils_0.2.0        gdata_3.0.1              jquerylib_0.1.4         
-## [160] GOSemSim_2.34.0          segmented_2.1-4          shinyjs_2.1.0           
-## [163] R.utils_2.13.0           timeDate_4041.110        lazyeval_0.2.2          
-## [166] shiny_1.10.0             BiocWorkflowTools_1.34.0 htmltools_0.5.8.1       
-## [169] affy_1.86.0              enrichplot_1.28.2        GO.db_3.21.0            
-## [172] rappdirs_0.3.3           glue_1.8.0               httr2_1.1.2             
-## [175] XVector_0.48.0           treeio_1.32.0            MALDIquant_1.22.3       
+##  [13] proxy_0.4-27             BiocBaseUtils_1.9.0      git2r_0.36.2            
+##  [16] ggrepel_0.9.6            parallelly_1.43.0        MASS_7.3-65             
+##  [19] reshape2_1.4.4           foreach_1.5.2            httpuv_1.6.15           
+##  [22] qvalue_2.39.0            withr_3.0.2              xfun_0.52               
+##  [25] ggfun_0.1.8              survival_3.8-3           memoise_2.0.1           
+##  [28] hexbin_1.28.5            gson_0.1.0               systemfonts_1.2.2       
+##  [31] mixtools_2.0.0.1         ragg_1.3.3               tidytree_0.4.6          
+##  [34] GlobalOptions_0.1.2      gtools_3.9.5             R.oo_1.27.0             
+##  [37] Formula_1.2-5            prettyunits_1.2.0        KEGGREST_1.47.1         
+##  [40] promises_1.3.2           httr_1.4.7               rstatix_0.7.2           
+##  [43] globals_0.16.3           rstudioapi_0.17.1        UCSC.utils_1.3.1        
+##  [46] miniUI_0.1.1.1           DOSE_4.1.0               ggalluvial_0.12.5       
+##  [49] curl_6.2.2               ncdf4_1.24               shinyhelper_0.3.2       
+##  [52] randomForest_4.7-1.2     GenomeInfoDbData_1.2.14  SparseArray_1.7.7       
+##  [55] xtable_1.8-4             doParallel_1.0.17        evaluate_1.0.3          
+##  [58] S4Arrays_1.7.3           BiocFileCache_2.15.1     preprocessCore_1.69.0   
+##  [61] hms_1.1.3                bookdown_0.42            colorspace_2.1-1        
+##  [64] filelock_1.0.3           shinyWidgets_0.9.0       magrittr_2.0.3          
+##  [67] later_1.4.2              viridis_0.6.5            ggtree_3.15.0           
+##  [70] lattice_0.22-7           MsCoreUtils_1.19.2       future.apply_1.11.3     
+##  [73] cowplot_1.1.3            class_7.3-23             pillar_1.10.2           
+##  [76] nlme_3.1-168             iterators_1.0.14         compiler_4.5.0          
+##  [79] stringi_1.8.7            gower_1.0.2              dendextend_1.19.0       
+##  [82] plyr_1.8.9               crayon_1.5.3             abind_1.4-8             
+##  [85] gridGraphics_0.5-1       bit_4.6.0                pcaMethods_1.99.0       
+##  [88] fastmatch_1.1-6          textshaping_1.0.0        codetools_0.2-20        
+##  [91] recipes_1.2.1            bslib_0.9.0              e1071_1.7-16            
+##  [94] plotly_4.10.4            LaplacesDemon_16.1.6     mime_0.13               
+##  [97] splines_4.5.0            circlize_0.4.16          dbplyr_2.5.0            
+## [100] knitr_1.50               blob_1.2.4               clue_0.3-66             
+## [103] AnnotationFilter_1.31.0  fs_1.6.5                 listenv_0.9.1           
+## [106] mzID_1.45.0              ggsignif_0.6.4           ggplotify_0.1.2         
+## [109] Matrix_1.7-3             statmod_1.5.0            svglite_2.1.3           
+## [112] tzdb_0.5.0               lpSolve_5.6.23           pkgconfig_2.0.3         
+## [115] tools_4.5.0              cachem_1.1.0             RSQLite_2.3.9           
+## [118] viridisLite_0.4.2        DBI_1.2.3                impute_1.81.0           
+## [121] fastmap_1.2.0            rmarkdown_2.29           scales_1.3.0            
+## [124] grid_4.5.0               usethis_3.1.0            shinydashboard_0.7.2    
+## [127] broom_1.0.8              sass_0.4.9               patchwork_1.3.0         
+## [130] coda_0.19-4.1            FNN_1.1.4.1              BiocManager_1.30.25     
+## [133] carData_3.0-5            lbfgs_1.2.1.2            rpart_4.1.24            
+## [136] farver_2.1.2             yaml_2.3.10              cli_3.6.4               
+## [139] lifecycle_1.0.4          caret_7.0-1              mvtnorm_1.3-3           
+## [142] backports_1.5.0          lava_1.8.1               kernlab_0.9-33          
+## [145] timechange_0.3.0         gtable_0.3.6             parallel_4.5.0          
+## [148] pROC_1.18.5              ape_5.8-1                limma_3.63.12           
+## [151] jsonlite_2.0.0           colourpicker_1.3.0       kableExtra_1.4.0        
+## [154] bit64_4.6.0-1            Rtsne_0.17               yulab.utils_0.2.0       
+## [157] gdata_3.0.1              jquerylib_0.1.4          GOSemSim_2.33.0         
+## [160] segmented_2.1-4          shinyjs_2.1.0            R.utils_2.13.0          
+## [163] timeDate_4041.110        lazyeval_0.2.2           shiny_1.10.0            
+## [166] BiocWorkflowTools_1.33.0 htmltools_0.5.8.1        affy_1.85.1             
+## [169] enrichplot_1.27.4        GO.db_3.21.0             rappdirs_0.3.3          
+## [172] tinytex_0.56             glue_1.8.0               httr2_1.1.2             
+## [175] XVector_0.47.2           treeio_1.31.0            MALDIquant_1.22.3       
 ## [178] mclust_6.1.1             igraph_2.1.4             R6_2.6.1                
-## [181] labeling_0.4.3           Spectra_1.18.0           aplot_0.2.5             
-## [184] ipred_0.9-15             DelayedArray_0.34.1      tidyselect_1.2.1        
-## [187] sampling_2.10            xml2_1.3.8               car_3.1-3               
-## [190] future_1.49.0            ModelMetrics_1.2.2.2     BiocStyle_2.36.0        
-## [193] affyio_1.78.0            data.table_1.17.2        htmlwidgets_1.6.4       
-## [196] fgsea_1.34.0             RColorBrewer_1.1-3       biomaRt_2.64.0          
-## [199] rlang_1.1.6              hardhat_1.4.1            prodlim_2025.04.28      
-## [202] PSMatch_1.12.0
+## [181] labeling_0.4.3           aplot_0.2.5              ipred_0.9-15            
+## [184] DelayedArray_0.33.6      tidyselect_1.2.1         sampling_2.10           
+## [187] xml2_1.3.8               car_3.1-3                future_1.34.0           
+## [190] ModelMetrics_1.2.2.2     munsell_0.5.1            BiocStyle_2.35.0        
+## [193] affyio_1.77.3            data.table_1.17.0        htmlwidgets_1.6.4       
+## [196] fgsea_1.33.4             RColorBrewer_1.1-3       biomaRt_2.63.3          
+## [199] rlang_1.1.5              hardhat_1.4.1            prodlim_2024.06.25      
+## [202] PSMatch_1.11.3
 \end{verbatim}
 
 \section{Author contributions}\label{author-contributions}

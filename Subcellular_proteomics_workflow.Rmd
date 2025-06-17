@@ -1297,30 +1297,31 @@ for(i in seq_along(na_stats)) {
       geom_col() + 
       ylim(c(0, 100)) + 
       labs(x = "Fraction", y = "Missing values (%)") +
-      ggtitle(names[i]))
+      ggtitle(names(qf)[ind]))
 }
 ```
 
-```{r, eval=FALSE, include=FALSE}
-## Generate image to insert
-for(i in seq_along(na_stats)) {
-  # Re-name pNA column so we have this information ready for plotting
-  names(na_stats[[i]]$nNAcols$nNA) <- na_stats[[i]]$nNAcols$name
-  # Plot the data
-  plot <- 
-    na_stats[[i]]$nNAcols %>%
-    as_tibble() %>%
-    ggplot(aes(x = name, y = (pNA * 100))) +
-    geom_col() +
-    ylim(c(0, 100)) +
-    labs(x = "Fraction", y = "Missing values (%)") +
-    ggtitle(names[i])
-  assign(paste0("plot", i), plot)
-}
-ggarrange(plot1, plot4, plot2, plot5, plot3, plot6, 
-          ncol = 2, nrow = 3)
-ggsave(filename = "figs/missing_values.png", dpi = 300)
-```
+<!-- ```{r, eval=FALSE, include=FALSE} -->
+<!-- ## Generate image to insert -->
+<!-- for(i in seq_along(na_stats)) { -->
+<!--   # Re-name pNA column so we have this information ready for plotting -->
+<!--   names(na_stats[[i]]$nNAcols$nNA) <- na_stats[[i]]$nNAcols$name -->
+<!--   # Plot the data -->
+<!--   plot <- -->
+<!--     na_stats[[i]]$nNAcols %>% -->
+<!--     as_tibble() %>% -->
+<!--     ggplot(aes(x = name, y = (pNA * 100))) + -->
+<!--     geom_col() + -->
+<!--     ylim(c(0, 100)) + -->
+<!--     labs(x = "Fraction", y = "Missing values (%)") + -->
+<!--     # theme(axis.text.x = element_text(angle = 90, hjust = 1, size = 12)) + -->
+<!--       ggtitle(names(qf)[ind]) -->
+<!--   assign(paste0("plot", i), plot) -->
+<!-- } -->
+<!-- ggarrange(plot1, plot4, plot2, plot5, plot3, plot6, -->
+<!--           ncol = 2, nrow = 3) -->
+<!-- ggsave(filename = "figs/missing_values.png", dpi = 300, width = 12, height = 10) -->
+<!-- ``` -->
 
 
 ```{r fig-mv, out.width = '90%', echo = FALSE, fig.cap = "Barplots of missing values for each replicate in each condition across the fractionation gradient."}
@@ -5150,15 +5151,16 @@ alluvial + ggtitle("Differential localisation following 12h x-ray")
 ```
 
 <!-- ```{r, message=FALSE, include = FALSE} -->
+<!-- pdf(file = "figs/alluvial_plot.pdf", width = 9, height = 10) -->
+<!-- par(oma = c(5,5,5,5)) -->
 <!-- ## Generate figure to insert -->
 <!-- ## Set the colours of the plot to match the organelles -->
 <!-- cols <- c(getStockcol()[seq(mrkCl)], "grey") -->
 <!-- names(cols) <- c(mrkCl, "unknown") -->
 
 <!-- ## Plot the flow of proteins -->
-<!-- pdf("figs/alluvial_plot.pdf") -->
-<!-- alluvial <- plotTranslocations(params = msnset_cands,  -->
-<!--                                fcol = "bandle.allocation.pred",  -->
+<!-- alluvial <- plotTranslocations(params = msnset_cands, -->
+<!--                                fcol = "bandle.allocation.pred", -->
 <!--                                col = cols) -->
 <!-- alluvial + ggtitle("Differential localisation following 12h x-ray") -->
 <!-- dev.off() -->
